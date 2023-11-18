@@ -30,7 +30,10 @@ Sources:
 
 * <https://github.com/elybaru/phase-1-project>
 
-Which is great! So i can check this person code too!
+## About Bard
+
+* This is great! So i can check this person code too!
+    * * I can send the result both via email and via gdoc. Check the first answer's GDoc: <https://docs.google.com/document/d/1y75TsYpu9kr3vh0zEEoq-IpBTfmbJ77fsISVKbHsRRU/edit>
 
 ## Result
 
