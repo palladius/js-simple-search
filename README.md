@@ -9,6 +9,8 @@ Well, Bard answered me with an instantly working `index.html` and `script.js`! I
 
 TODO frankenstein junior image
 
+ <img src='https://github.com/palladius/js-simple-seac/raw/master/images/howididit.jpg' height='200' align='right' />
+
 ## Result
 
 img: " Screenshot 2023-11-18 at 15.25.21.png"
