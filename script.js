@@ -65,6 +65,7 @@ const data = [
     is_gcp: true,
     isTechnical: false,
     isFood: false,
+    tags: 'gcp, infra, iam',
     //. https://github.com/palladius/genai-googlecloud-scripts/blob/main/03-ruby-medium-article-slurper/outputs/medium-latest-articles.palladiusbonton.txt.json
     //song: "The Road Goes On Forever"
 },
@@ -73,6 +74,7 @@ const data = [
     description: 'Riccardo first video for Google.',
     isTechnical: true,
     rating: 4.9,
+    tags: 'video, SRE, AoS',
     image: 'sounds-good-riccardo-meme.jpeg',
     url: 'https://www.youtube.com/watch?v=E3ReKuJ8ewA',
   },
@@ -81,6 +83,7 @@ const data = [
     description: 'An article demonstrating my hatred for Spaghetti Bolognese (Bolonnaise?) - as an Italian',
     isTechnical: false,
     isFood: true,
+    tags: '',
     type: 'article',
     rating: 2.9,
     url: 'https://medium.com/@palladiusbonton/spaghetti-bolognese-dont-exist-1-2088d85909dd',
@@ -93,6 +96,7 @@ const data = [
     isTechnical: false,
     isFood: true,
     type: 'article',
+    tags: '',
     rating: 3.9,
     url: 'https://ricc.rocks/en/posts/www.palladius.it/spaghetti-bolognese-dont-exist/',
     image: 'spagbol.jpg'
@@ -102,7 +106,7 @@ const data = [
     description: 'Riccardo family-run business, 🐧🧳Puffin Tours, inspired by Starter Kit to build Rails applications fast, with Ralix, Tailwind and more!',
     isTechnical: true,
     type: 'application',
-
+    tags: '',
     rating: 4.9,
     url: 'https://puffintours-prod-rjjr63dzrq-ew.a.run.app/',
     image: 'puffinMcMuffin.png'
@@ -117,6 +121,7 @@ const data = [
     rating: 4.6,
     url: 'https://genai.prompteer.it/', // broken
     isCodePrivate: true,
+    tags: '',
   },
   {
     title: '✨ GenAI Kids Stories',
@@ -127,6 +132,7 @@ const data = [
     rating: 4.9,
     url: 'https://genai-kids-stories-gcloud-poor-cdlu26pd4q-ew.a.run.app/', // broken
     isCodePrivate: false,
+    tags: '',
   },
 
   //
@@ -135,6 +141,7 @@ const data = [
     image: 'js-simple-search.png', //'howididit.jpg'
     description: 'simple static JSON searcher, super fast!',
     isTechnical: true,
+    tags: '',
     type: 'application',
     rating: 4.5,
     code: 'https://github.com/palladius/js-simple-search',
@@ -147,7 +154,7 @@ const data = [
     title: 'DHH Vanilla 7.0.1',
     image: 'dhh-vanilla-701.png',
     description: 'My lighthouse app for Rails! Contains all Carlessian Apps. See https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/ricc_apps.json if you dont believe me!',
-    keywords: 'RoR, lighthouse, Rails, DHH, bigmerge',
+    tags: 'RoR, lighthouse, Rails, DHH, bigmerge',
     isTechnical: true,
     type: 'application',
     rating: 4.5,
@@ -159,7 +166,7 @@ const data = [
     title: 'GCP Cache',
     image: 'gcp-cache.png',
     description: 'GCP Cache to quickly search through your local assets on GCP!',
-    keywords: 'RoR, GCP, bigmerge, search',
+    tags: 'RoR, GCP, bigmerge, search',
     isTechnical: true,
     type: 'application',
     rating: 4.5,
@@ -172,6 +179,7 @@ const data = [
     image: 'tagliatelle-red-green-yellow.png',
     description: 'How to get correct associations of pasta. eg, bolognese or carbonara, which goes on spaghetti?',
     isTechnical: true,
+    tags: 'pasta',
     type: 'application',
     rating: 4.9,
     code: 'https://github.com/palladius/pasta',
@@ -185,6 +193,7 @@ const data = [
     description: 'how do you teach the alphabet to your kid? You store a personal image per letter, and good luck with H , K , X and Y',
     isTechnical: true,
     type: 'application',
+    tags: 'family, alessandro, personal',
     rating: 4.5,
     code: 'https://github.com/palladius/baby-alphabet',
     url: 'https://aj-alphabet.palladi.us/', // TODO host this
@@ -200,7 +209,9 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
     filteredResults = filteredResults.filter(item => {
       const titleMatch = item.title.toLowerCase().includes(searchTerm.toLowerCase());
       const descriptionMatch = item.description.toLowerCase().includes(searchTerm.toLowerCase());
-      return titleMatch || descriptionMatch;
+      // doesnt always exist
+      const tagsMatch = item.tags ? item.tags.toLowerCase().includes(searchTerm.toLowerCase()) : false;
+      return titleMatch || descriptionMatch || tagsMatch;
     });
   }
 
