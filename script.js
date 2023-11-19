@@ -178,6 +178,18 @@ const data = [
     url: 'https://github.com/palladius/pasta', // TODO host this
     isCodePrivate: false,
   },
+  //
+  {
+    title: 'AJ Alphabet',
+    image: 'aj-alphabet.jpeg',
+    description: 'how do you teach the alphabet to your kid? You store a personal image per letter, and good luck with H , K , X and Y',
+    isTechnical: true,
+    type: 'application',
+    rating: 4.5,
+    code: 'https://github.com/palladius/baby-alphabet',
+    url: 'https://aj-alphabet.palladi.us/', // TODO host this
+    isCodePrivate: false,
+  },
 
 ];
 
@@ -218,7 +230,7 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
       ${imageHTml}
       <h3>${item.isTechnical ? '💻' : "🎨"} ${linkedTitle}</h3>
       <p>[${item.type}] ${item.description }</p>
-      <p>${link} |
+      <p>${link} | ${codeLink}
          Rating: ${ item.rating }</p>
     </div>`;
   });
