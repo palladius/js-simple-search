@@ -143,11 +143,11 @@ const data = [
     image: 'js-simple-search.png', //'howididit.jpg'
     description: 'simple static JSON searcher, super fast!',
     isTechnical: true,
-    tags: '',
+    tags: 'jsss, javascript, js, typescript, static, html, nginx',
     type: 'application',
     rating: 4.5,
     code: 'https://github.com/palladius/js-simple-search',
-    url: 'https://github.com/palladius/js-simple-search', // TODO host this
+    url: 'https://js-simple-search-bsl7ylv4hq-ew.a.run.app/', // TODO host this
     isCodePrivate: false,
   },
   // Asset DB todo

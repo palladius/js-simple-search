@@ -4,7 +4,7 @@ PROJECT = storazzo-8ab31
 docker-build:
 	time docker build -t jsss .
 
-docker-run:
+docker-run: docker-build
 	docker run -it -p 8080:8080 jsss
 
 # https://medium.com/google-cloud/google-cloud-run-or-how-to-run-your-static-website-in-5-minutes-and-much-more-dbe8f2804395
