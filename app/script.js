@@ -4,52 +4,54 @@ const sortBySelect = document.getElementById('sort-by');
 const searchResults = document.getElementById('search-results');
 
 const data = [
-  {
-    title: 'Pistachio Ice Cream',
-    description: 'A delicious and creamy ice cream made with pistachios.',
-    isTechnical: false,
-    isFood: true,
-    url: 'http://blah',
-    image: 'pistacchio.jpg',
-    rating: 4.5
-  },
-  {
-    title: 'Chocolate Chip Cookies',
-    description: 'Classic chewy chocolate chip cookies.',
-    isTechnical: false,
-    isFood: true,
-    url: 'https://www.google.com/search?q=Chocolate+Chip+Cookies',
-    image: 'JT-Chocolate-Chip-Cookies-blog480.jpg',
-    rating: 4.2
-  },
-  {
-    title: 'Apple Pie',
-    description: 'A warm and comforting apple pie with a flaky crust.',
-    isTechnical: false,
-    isFood: true,
-        rating: 4.8,
-    image: 'best-apple-pie-recipe-from-scratch-8.jpg',
-  },
-  {
-    title: 'Pasta Primavera',
-    description: 'A light and flavorful pasta dish with fresh vegetables.',
-    isTechnical: false,
-    isFood: true,
-    rating: 1.1,
-    image: 'Pasta-Primavera-3.jpg'
-  },
-  {
-    title: 'Chicken Tikka Masala',
-    description: 'A creamy and flavorful Indian curry with chicken.',
-    isTechnical: false,
-    isFood: true,
-    image: 'Best-Chicken-Tikka-Masala-IMAGE-2.jpg',
-    rating: 4.7
-  },
+  // {
+  //   title: 'Pistachio Ice Cream',
+  //   description: 'A delicious and creamy ice cream made with pistachios.',
+  //   isTechnical: false,
+  //   isFood: true,
+  //   url: 'http://blah',
+  //   image: 'pistacchio.jpg',
+  //   rating: 4.5
+  // },
+  // {
+  //   title: 'Chocolate Chip Cookies',
+  //   description: 'Classic chewy chocolate chip cookies.',
+  //   isTechnical: false,
+  //   isFood: true,
+  //   url: 'https://www.google.com/search?q=Chocolate+Chip+Cookies',
+  //   image: 'JT-Chocolate-Chip-Cookies-blog480.jpg',
+  //   rating: 4.2
+  // },
+  // {
+  //   title: 'Apple Pie',
+  //   description: 'A warm and comforting apple pie with a flaky crust.',
+  //   isTechnical: false,
+  //   isFood: true,
+  //       rating: 4.8,
+  //   image: 'best-apple-pie-recipe-from-scratch-8.jpg',
+  // },
+  // {
+  //   title: 'Pasta Primavera',
+  //   description: 'A light and flavorful pasta dish with fresh vegetables.',
+  //   isTechnical: false,
+  //   isFood: true,
+  //   rating: 1.1,
+  //   image: 'Pasta-Primavera-3.jpg'
+  // },
+  // {
+  //   title: 'Chicken Tikka Masala',
+  //   description: 'A creamy and flavorful Indian curry with chicken.',
+  //   isTechnical: false,
+  //   isFood: true,
+  //   image: 'Best-Chicken-Tikka-Masala-IMAGE-2.jpg',
+  //   rating: 4.7
+  // },
   {
     title: 'Automated insights on Medium articles with GenAI and Ruby!',
-    description: 'An amazoing article on how to use GenAI and Ruby to automatically extract keywords!',
+    description: 'An amazing article on how to use GenAI and Ruby to automatically extract keywords!',
     isTechnical: true,
+    type: 'article',
+    tags: 'genai, palm, vertexai, gcp',
     image: 'medium-ragno-rosso.png',
     url: 'https://medium.com/@palladiusbonton/parse-medium-articles-with-genai-and-add-some-fun-02fe9d30475a',
     rating: 4.7
