@@ -144,14 +144,38 @@ const data = [
   // Asset DB todo
   //
   {
+    title: 'DHH Vanilla 7.0.1',
+    image: 'dhh-vanilla-701.png',
+    description: 'My lighthouse app for Rails! Contains all Carlessian Apps. See https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/ricc_apps.json if you dont believe me!',
+    keywords: 'RoR, lighthouse, Rails, DHH, bigmerge',
+    isTechnical: true,
+    type: 'application',
+    rating: 4.5,
+    //code: 'https://github.com/palladius/gcp-cache',
+    url: 'https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/', // TODO host this
+    isCodePrivate: true,
+  },
+  {
     title: 'GCP Cache',
     image: 'gcp-cache.png',
-    description: 'simple static JSON searcher, super fast!',
+    description: 'GCP Cache to quickly search through your local assets on GCP!',
+    keywords: 'RoR, GCP, bigmerge, search',
     isTechnical: true,
     type: 'application',
     rating: 4.5,
     code: 'https://github.com/palladius/gcp-cache',
     url: 'https://github.com/palladius/gcp-cache', // TODO host this
+    isCodePrivate: false,
+  },
+  {
+    title: 'Pasta',
+    image: 'tagliatelle-red-green-yellow.png',
+    description: 'How to get correct associations of pasta. eg, bolognese or carbonara, which goes on spaghetti?',
+    isTechnical: true,
+    type: 'application',
+    rating: 4.9,
+    code: 'https://github.com/palladius/pasta',
+    url: 'https://github.com/palladius/pasta', // TODO host this
     isCodePrivate: false,
   },
 
