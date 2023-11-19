@@ -51,6 +51,7 @@ const data = [
     description: 'An amazoing article on how to use GenAI and Ruby to automatically extract keywords!',
     isTechnical: true,
     image: 'medium-ragno-rosso.png',
+    url: 'https://medium.com/@palladiusbonton/parse-medium-articles-with-genai-and-add-some-fun-02fe9d30475a',
     rating: 4.7
   },
   {
@@ -73,15 +74,27 @@ const data = [
     isTechnical: true,
     rating: 4.9,
     image: 'sounds-good-riccardo-meme.jpeg',
-    URL: 'https://www.youtube.com/watch?v=E3ReKuJ8ewA',
+    url: 'https://www.youtube.com/watch?v=E3ReKuJ8ewA',
   },
   {
-    title: '[Riccardo] Spag Bol doesnt exist',
-    description: 'This was created with Bard Third(fifth?) interaction.',
+    title: 'Spag Bol doesnt exist (medium)',
+    description: 'An article demonstrating my hatred for Spaghetti Bolognese (Bolonnaise?) - as an Italian',
     isTechnical: false,
     isFood: true,
     type: 'article',
     rating: 2.9,
+    url: 'https://medium.com/@palladiusbonton/spaghetti-bolognese-dont-exist-1-2088d85909dd',
+    // url2: https://ricc.rocks/en/posts/www.palladius.it/spaghetti-bolognese-dont-exist/
+    image: 'spagbol.jpg'
+  },
+  {
+    title: 'Spag Bol doesnt exist (ricc rocks)',
+    description: 'An article demonstrating my hatred for Spaghetti Bolognese (Bolonnaise?) - as an Italian',
+    isTechnical: false,
+    isFood: true,
+    type: 'article',
+    rating: 3.9,
+    url: 'https://ricc.rocks/en/posts/www.palladius.it/spaghetti-bolognese-dont-exist/',
     image: 'spagbol.jpg'
   },
   {
@@ -91,7 +104,7 @@ const data = [
     type: 'application',
 
     rating: 4.9,
-    URL: 'https://puffintours-prod-rjjr63dzrq-ew.a.run.app/',
+    url: 'https://puffintours-prod-rjjr63dzrq-ew.a.run.app/',
     image: 'puffinMcMuffin.png'
 
   },
@@ -101,9 +114,8 @@ const data = [
     description: 'POC for a PromptDB, where you can store prompts, prompt templates, issue them and vote them!',
     isTechnical: true,
     type: 'application',
-
     rating: 4.6,
-    URL: 'https://genai.prompteer.it/', // broken
+    url: 'https://genai.prompteer.it/', // broken
     isCodePrivate: true,
   },
   {
@@ -113,7 +125,7 @@ const data = [
     isTechnical: true,
     type: 'application',
     rating: 4.9,
-    URL: 'https://genai-kids-stories-gcloud-poor-cdlu26pd4q-ew.a.run.app/', // broken
+    url: 'https://genai-kids-stories-gcloud-poor-cdlu26pd4q-ew.a.run.app/', // broken
     isCodePrivate: false,
   },
 
@@ -125,12 +137,23 @@ const data = [
     isTechnical: true,
     type: 'application',
     rating: 4.5,
-    code: 'https://github.com/palladius/js-simple-seach',
-    URL: 'https://github.com/palladius/js-simple-seach', // TODO host this
+    code: 'https://github.com/palladius/js-simple-seach', // TODO use this
+    url: 'https://github.com/palladius/js-simple-seach', // TODO host this
     isCodePrivate: false,
   },
-
-
+  // Asset DB todo
+  //
+  {
+    title: 'GCP Cache',
+    image: 'gcp-cache.png',
+    description: 'simple static JSON searcher, super fast!',
+    isTechnical: true,
+    type: 'application',
+    rating: 4.5,
+    code: 'https://github.com/palladius/gcp-cache',
+    url: 'https://github.com/palladius/gcp-cache', // TODO host this
+    isCodePrivate: false,
+  },
 
 ];
 
@@ -163,11 +186,14 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
     const imageHTml = item.image ?
       `<img src="images/${ item.image }" alt="${ item.title }">` :
       ``
+    const codeLink = item.code ?
+      `<a href='${item.code}'>🐙 Code</a> |` :
+      ``
+    const linkedTitle = `<a href='${item.url}'>${item.title}</a>`
     return `<div class="card">
       ${imageHTml}
-      <h3>${ item.title }</h3>
+      <h3>${item.isTechnical ? '💻' : "🎨"} ${linkedTitle}</h3>
       <p>[${item.type}] ${item.description }</p>
-      ${item.isTechnical ? '💻' : "🎨" }
       <p>${link} |
          Rating: ${ item.rating }</p>
     </div>`;
