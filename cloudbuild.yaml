@@ -4,20 +4,22 @@
 # project_id: storazzo-8ab31c
 # region:     europe-west1
 ############################################################
-
+# vars:
+#   new_ar: "europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search"
+#   old_gcrio: 'gcr.io/storazzo-8ab31c/js-simple-search-cb'
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/storazzo-8ab31c/js-simple-search-cb', '.']
+  args: ['build', '-t', 'europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search', '.']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/storazzo-8ab31c/js-simple-search-cb']
+  args: ['push', 'europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search']
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'js-simple-search-cb', '--image', 'gcr.io/storazzo-8ab31c/js-simple-search-cb', '--region', 'europe-west1']
+  args: ['run', 'deploy', 'js-simple-search-cb', '--image', 'europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search', '--region', 'europe-west1']
 images:
-- 'gcr.io/storazzo-8ab31c/js-simple-search-cb'
+- 'europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search'
 
 options:
   # This allows for missing ENV variables.
