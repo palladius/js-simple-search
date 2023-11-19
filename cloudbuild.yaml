@@ -1,3 +1,11 @@
+############################################################
+# Would like to substitute them:
+############################################################
+# project_id: storazzo-8ab31c
+# region:     europe-west1
+############################################################
+
+
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
@@ -10,9 +18,8 @@ steps:
   entrypoint: gcloud
   args: ['run', 'deploy', 'js-simple-search-cb', '--image', 'gcr.io/storazzo-8ab31c/js-simple-search-cb', '--region', 'europe-west1']
 images:
-- gcr.io/storazzo-8ab31c/js-simple-search-cb
+- 'gcr.io/storazzo-8ab31c/js-simple-search-cb'
 
-# storazzo-8ab31c
 options:
   # This allows for missing ENV variables.
   substitution_option: 'ALLOW_LOOSE'
