@@ -92,6 +92,36 @@ const data = [
     image: 'puffinMcMuffin.png'
 
   },
+  {
+    title: 'prompteer',
+    image: 'prompteer.png',
+    description: 'POC for a PromptDB, where you can store prompts, prompt templates, issue them and vote them!',
+    isTechnical: true,
+    rating: 4.6,
+    URL: 'https://genai.prompteer.it/', // broken
+    isCodePrivate: true,
+  },
+  {
+    title: '✨ GenAI Kids Stories',
+    image: 'genai-kids-stories.png',
+    description: 'GenAI Kids Story with Vertexc AI and Palm API, wow!',
+    isTechnical: true,
+    rating: 4.9,
+    URL: 'https://genai-kids-stories-gcloud-poor-cdlu26pd4q-ew.a.run.app/', // broken
+    isCodePrivate: false,
+  },
+
+  //
+  {
+    title: '✨ JS Simple Search',
+    image: 'howididit.jpg',
+    description: 'simple static JSON searcher, super fast!',
+    isTechnical: true,
+    rating: 4.5,
+    code: 'https://github.com/palladius/js-simple-seach',
+    URL: 'https://github.com/palladius/js-simple-seach', // TODO host this
+    isCodePrivate: false,
+  },
 
 
 
