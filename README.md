@@ -8,7 +8,7 @@ Well, Bard answered me with an instantly working `index.html` and `script.js`! I
 ## How I did it?
 
 So how did I do it? I asked Bard, yes!
- <img src='https://github.com/palladius/js-simple-seach/raw/main/images/howididit.jpg' height='200' align='right' />
+ <img src='https://github.com/palladius/js-simple-seach/raw/main/app/images/howididit.jpg' height='200' align='right' />
 
 ### Initial question
 
@@ -37,7 +37,7 @@ Sources:
 
 ## Result
 
- <img src='https://github.com/palladius/js-simple-seach/raw/main/images/Screenshot 2023-11-18 at 15.25.21.png' height='200' align='right' />
+ <img src='https://github.com/palladius/js-simple-seach/raw/main/app/images/Screenshot 2023-11-18 at 15.25.21.png' height='200' align='right' />
 
 Video:
 
