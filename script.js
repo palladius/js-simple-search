@@ -68,18 +68,19 @@ const data = [
     //song: "The Road Goes On Forever"
 },
   {
-    title: 'Script 3c (technical): Bard rocks!',
-    description: 'This was created with Bard Third(fifth?) interaction.',
+    title: 'Art of SLOs video',
+    description: 'Riccardo first video for Google.',
     isTechnical: true,
     rating: 4.9,
-    image: 'sounds-good-riccardo-meme.jpeg'
-
+    image: 'sounds-good-riccardo-meme.jpeg',
+    URL: 'https://www.youtube.com/watch?v=E3ReKuJ8ewA',
   },
   {
     title: '[Riccardo] Spag Bol doesnt exist',
     description: 'This was created with Bard Third(fifth?) interaction.',
     isTechnical: false,
     isFood: true,
+    type: 'article',
     rating: 2.9,
     image: 'spagbol.jpg'
   },
@@ -87,16 +88,20 @@ const data = [
     title: '🐧🧳 Puffin Tours',
     description: 'Riccardo family-run business, 🐧🧳Puffin Tours, inspired by Starter Kit to build Rails applications fast, with Ralix, Tailwind and more!',
     isTechnical: true,
+    type: 'application',
+
     rating: 4.9,
     URL: 'https://puffintours-prod-rjjr63dzrq-ew.a.run.app/',
     image: 'puffinMcMuffin.png'
 
   },
   {
-    title: 'prompteer',
+    title: '⚔️🤺🛡 Prompteer',
     image: 'prompteer.png',
     description: 'POC for a PromptDB, where you can store prompts, prompt templates, issue them and vote them!',
     isTechnical: true,
+    type: 'application',
+
     rating: 4.6,
     URL: 'https://genai.prompteer.it/', // broken
     isCodePrivate: true,
@@ -106,6 +111,7 @@ const data = [
     image: 'genai-kids-stories.png',
     description: 'GenAI Kids Story with Vertexc AI and Palm API, wow!',
     isTechnical: true,
+    type: 'application',
     rating: 4.9,
     URL: 'https://genai-kids-stories-gcloud-poor-cdlu26pd4q-ew.a.run.app/', // broken
     isCodePrivate: false,
@@ -117,6 +123,7 @@ const data = [
     image: 'howididit.jpg',
     description: 'simple static JSON searcher, super fast!',
     isTechnical: true,
+    type: 'application',
     rating: 4.5,
     code: 'https://github.com/palladius/js-simple-seach',
     URL: 'https://github.com/palladius/js-simple-seach', // TODO host this
@@ -159,7 +166,7 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
     return `<div class="card">
       ${imageHTml}
       <h3>${ item.title }</h3>
-      <p>${ item.description }</p>
+      <p>[${item.type}] ${item.description }</p>
       ${item.isTechnical ? '💻' : "🎨" }
       <p>${link} |
          Rating: ${ item.rating }</p>

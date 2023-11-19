@@ -38,3 +38,11 @@ Sources:
 ## Result
 
  <img src='https://github.com/palladius/js-simple-seach/raw/main/images/Screenshot 2023-11-18 at 15.25.21.png' height='200' align='right' />
+
+Video:
+
+ <video src='docs/JS simple search video.mov' width=180/>
+
+ <video src='https://github.com/palladius/js-simple-seach/raw/main/docs/JS simple search video.mov' width=180/>
+
+embed: todo
