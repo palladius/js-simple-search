@@ -256,4 +256,13 @@ sortBySelect.addEventListener('change', () => {
 // added by Riccardo: trigger search on pageLoad
 addEventListener("load", (event) => {
   filterSearchResults('', isTechnicalCheckbox.checked, sortBySelect.value);
+
+  // set focus on search engine
+  // https://stackoverflow.com/questions/10894638/how-to-set-cursor-to-input-box-in-javascript
+  document.getElementById("search-input").focus();
+  document.getElementById("search-input").select();
+
+  //div.getElementsByTagName("input")[0].focus();
+  //div.getElementsByTagName("input")[0].setSelectionRange(div.getElementsByTagName("input")[0].value.length,div.getElementsByTagName("input")[0].value.length,"forward");
+
 });
