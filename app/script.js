@@ -92,7 +92,7 @@ const data = [
     url: 'https://www.youtube.com/watch?v=E3ReKuJ8ewA',
   },
   {
-    title: 'Spag Bol doesnt exist (medium)',
+    title: 'Spag Bol doesnt exist (medium) 🇮🇹',
     description: 'An article demonstrating my hatred for Spaghetti Bolognese (Bolonnaise?) - as an Italian',
     isTechnical: false,
     isFood: true,
@@ -114,7 +114,7 @@ const data = [
     image: 'spagbol.jpg'
   },
   {
-    title: '🐧🧳 Puffin Tours',
+    title: 'Puffin Tours 🐧🧳',
     description: 'Riccardo family-run business, 🐧🧳Puffin Tours, inspired by Starter Kit to build Rails applications fast, with Ralix, Tailwind and more!',
     isTechnical: true,
     type: 'application',
@@ -125,7 +125,7 @@ const data = [
 
   },
   {
-    title: '⚔️🤺🛡 Prompteer',
+    title: 'Prompteer ⚔️🤺🛡',
     image: 'prompteer.png',
     description: 'POC for a PromptDB, where you can store prompts, prompt templates, issue them and vote them!',
     isTechnical: true,
@@ -136,7 +136,7 @@ const data = [
     tags: '',
   },
   {
-    title: '✨ GenAI Kids Stories',
+    title: 'GenAI Kids Stories ✨',
     image: 'genai-kids-stories.png',
     description: 'GenAI Kids Story with Vertexc AI and Palm API, wow!',
     isTechnical: true,
@@ -149,7 +149,7 @@ const data = [
 
   //
   {
-    title: '✨ JS Simple Search',
+    title: 'JS Simple Search ✨',
     image: 'js-simple-search.png', //'howididit.jpg'
     description: 'simple static JSON searcher, super fast!',
     isTechnical: true,
@@ -276,7 +276,6 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
           <p>
             ${link}
             ${codeLink}
-            <kbd>${ item.rating }</kbd>
           </p>
         </div>
       </div>
