@@ -26,13 +26,13 @@
   }
 }
 
-.card img {
+/* .card img {
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 20%;
   margin-bottom: 10px;
-}
+} */
 
 .card h3 {
   font-size: 20px;

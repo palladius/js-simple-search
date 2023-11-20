@@ -62,6 +62,7 @@ const data = [
     url: "https://medium.com/google-cloud/how-to-migrate-projects-across-organizations-c7e254ab90af?source=rss-b5293b96912f------2",
     accuracy: 9,
     image: 'migrate-orgs.png',
+    type: 'article',
     rating: 4.5,
     year_publication: 2023,
     is_gcp: true,
@@ -75,7 +76,9 @@ const data = [
     title: 'Art of SLOs video',
     description: 'Riccardo first video for Google.',
     isTechnical: true,
+    higlight: true, // todo implement
     rating: 4.9,
+    type: 'application',
     tags: 'video, SRE, AoS',
     image: 'sounds-good-riccardo-meme.jpeg',
     url: 'https://www.youtube.com/watch?v=E3ReKuJ8ewA',
@@ -230,39 +233,48 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
 
   const resultElements = filteredResults.map(item => {
     const link = item.url ?
-      `<a href='${item.url}'  class="btn btn-success"  >🕸️ URL</a>\n"` :
+      `<a href='${item.url}'  class="btn btn-success"  >🕸️ URL</a>` :
       `<a href='https://www.google.com/search?q=${item.title}'  class="btn btn-info"  >🔎 Google this!</a>\n`
     const imageHTml = item.image ?
-      `<img src="images/${ item.image }" alt="${ item.title }" class="card-img-top">` :
+      `<img src="images/${ item.image }" alt="${ item.title }" class="card-img-top rounded">` :
       ``
     const codeLink = item.code ?
-      `<a href='${item.code}' class="btn btn-primary" >🐙 Code</a> |` :
+      `<a href='${item.code}' class="btn btn-primary" >🐙 Code</a> ` :
       ``
     const linkedTitle = `<a href='${item.url}'  >${item.title}</a>`
-    return `<div class="card">
-      ${imageHTml}
+    return `
+    <!-- 
+    <div class="card">
       <h3>${item.isTechnical ? '💻' : "🎨"} ${linkedTitle}</h3>
+      ${imageHTml}
       <p>[${item.type}] ${item.description }</p>
       <p>${link} | ${codeLink}
-         Rating: ${ item.rating }</p>
+         Rating: <kbd>${ item.rating }</kbd></p>
     </div>
+    -->
     
     
     
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        ${imageHTml}
+    <div class="card border-info mb-3" style="width: 18rem;">
+        <div class="card-header">
+          <h5 class="card-title"> ${linkedTitle} </h5>
+        </div>
         <div class="card-body">
-          <h5 class="card-title">${item.isTechnical ? '💻' : "🎨"} ${linkedTitle}</h5>
-          <p class="card-text">
-            [${item.type}] ${item.description }
-            See https://getbootstrap.com/docs/4.0/components/card/
+          
+            <p>${item.isTechnical ? '💻' : "🎨"} ${item.type}  <kbd>${ item.rating }</kbd> </p>
+          
+
+
+          
+          ${imageHTml}
+          <p class="card-text alert alert-primary">
+             ${item.description }
           </p>
-          <div class="alert alert-primary" role="alert">
-            This is a primary alert—check it out!
-          </div>
-          <p>${link} | ${codeLink}
-            Rating: ${ item.rating }</p>
+          <p>
+            ${link}
+            ${codeLink}
+            <kbd>${ item.rating }</kbd>
+          </p>
         </div>
       </div>
     </div>
