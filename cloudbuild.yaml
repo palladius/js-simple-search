@@ -3,6 +3,7 @@
 ############################################################
 # project_id: storazzo-8ab31c
 # region:     europe-west1
+# SA: build-sa@storazzo-8ab31.iam.gserviceaccount.com
 ############################################################
 # vars:
 #   new_ar: "europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search"
@@ -11,6 +12,7 @@
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
+  id: docker build
   args: ['build', '-t', 'europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search', '.']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'

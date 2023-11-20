@@ -3,6 +3,7 @@
 ############################################################
 # project_id: storazzo-8ab31c
 # region:     europe-west1
+# SA: build-sa@storazzo-8ab31.iam.gserviceaccount.com
 ############################################################
 # vars:
 #   old_gcrio: 'gcr.io/storazzo-8ab31c/js-simple-search-cb'
