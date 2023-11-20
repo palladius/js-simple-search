@@ -4,6 +4,7 @@ Well, Bard answered me with an instantly working `index.html` and `script.js`! I
 
 More on the Genesis in this <a href="https://medium.com/@palladiusbonton/hey-bard-write-a-responsive-javascript-search-engine-app-for-me-b2585e55385e">Medium Article</a>.
 
+The app is currently served by cloud run here: https://js-simple-search-bsl7ylv4hq-ew.a.run.app/ 
 
 ## How I did it?
 
