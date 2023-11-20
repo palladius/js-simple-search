@@ -37,14 +37,17 @@ Sources:
 
 ## Result
 
+You can see how the autocompletion works, and also how you can sort by `title` vs `relevance` (score).
+
+This is a GIF of how the result looks like:
 
  <img src='https://github.com/palladius/js-simple-seach/raw/main/docs/jsss-video-5x.gif' align='center' />
 
 
-Video (WIP - I've never embedded a video in my life):
 
 <!-- 
+Video (WIP - I've never embedded a video in my life):
  <video src='docs/jsss-video.mov' width=180/>
--->
  <video src='https://github.com/palladius/js-simple-seach/raw/main/docs/jsss-video.mov' width=180/>
+-->
 
