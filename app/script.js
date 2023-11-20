@@ -54,6 +54,14 @@ const data = [
     tags: 'genai, palm, vertexai, gcp',
     image: 'medium-ragno-rosso.png',
     url: 'https://medium.com/@palladiusbonton/parse-medium-articles-with-genai-and-add-some-fun-02fe9d30475a',
+    code: 'https://github.com/palladius/genai-googlecloud-scripts/tree/main/03-ruby-medium-article-slurper',
+    // URLsv2: [
+    //   code: 'blah',
+    //   article: 'blah',
+    //   demo: 'blah',
+    //   video: 'blah',
+    //   // TODO refactor this way, seems more scalable.
+    // ],
     rating: 4.7
   },
   {
