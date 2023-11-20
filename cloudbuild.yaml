@@ -7,6 +7,7 @@
 # vars:
 #   new_ar: "europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search"
 #   old_gcrio: 'gcr.io/storazzo-8ab31c/js-simple-search-cb'
+
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
@@ -25,3 +26,9 @@ options:
   # This allows for missing ENV variables.
   substitution_option: 'ALLOW_LOOSE'
   logging: CLOUD_LOGGING_ONLY
+
+
+#   CBSA:  1013318838212@cloudbuild.gserviceaccount.com
+#gcloud projects add-iam-policy-binding PROJECT_ID \\
+#--member="serviceAccount:PROJECT_NUMBER@cloudbuild.gserviceaccount.com" \\
+# --role="roles/artifactregistry.reader"
