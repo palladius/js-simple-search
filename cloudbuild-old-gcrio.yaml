@@ -1,0 +1,35 @@
+############################################################
+# Would like to substitute them:
+############################################################
+# project_id: storazzo-8ab31c
+# region:     europe-west1
+############################################################
+# vars:
+#   old_gcrio: 'gcr.io/storazzo-8ab31c/js-simple-search-cb'
+
+steps:
+# Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/storazzo-8ab31c/js-simple-search-cb', '.']
+# Push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/storazzo-8ab31c/js-simple-search-cb']
+# Deploy container image to Cloud Run
+# first needs this (I hope as one off I just did from my computer)
+# gcloud auth configure-docker europe-west1-docker.pkg.dev
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args: ['run', 'deploy', 'js-simple-search-cb', '--image', 'gcr.io/storazzo-8ab31c/js-simple-search-cb', '--region', 'europe-west1']
+images:
+- 'gcr.io/storazzo-8ab31c/js-simple-search-cb'
+
+options:
+  # This allows for missing ENV variables.
+  substitution_option: 'ALLOW_LOOSE'
+  logging: CLOUD_LOGGING_ONLY
+
+
+#   CBSA:  1013318838212@cloudbuild.gserviceaccount.com
+#gcloud projects add-iam-policy-binding PROJECT_ID \\
+#--member="serviceAccount:PROJECT_NUMBER@cloudbuild.gserviceaccount.com" \\
+# --role="roles/artifactregistry.reader"
