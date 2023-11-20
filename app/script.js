@@ -143,7 +143,7 @@ const data = [
     image: 'js-simple-search.png', //'howididit.jpg'
     description: 'simple static JSON searcher, super fast!',
     isTechnical: true,
-    tags: 'jsss, javascript, js, typescript, static, html, nginx',
+    tags: 'jsss, javascript, js, typescript, static, html, nginx, bigmerge, docker',
     type: 'application',
     rating: 4.5,
     code: 'https://github.com/palladius/js-simple-search',
@@ -230,22 +230,45 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
 
   const resultElements = filteredResults.map(item => {
     const link = item.url ?
-      `<a href='${item.url}' >🕸️ URL</a>\n"` :
-      `<a href='https://www.google.com/search?q=${item.title}' >🔎 Google this!</a>\n`
+      `<a href='${item.url}'  class="btn btn-success"  >🕸️ URL</a>\n"` :
+      `<a href='https://www.google.com/search?q=${item.title}'  class="btn btn-info"  >🔎 Google this!</a>\n`
     const imageHTml = item.image ?
-      `<img src="images/${ item.image }" alt="${ item.title }">` :
+      `<img src="images/${ item.image }" alt="${ item.title }" class="card-img-top">` :
       ``
     const codeLink = item.code ?
-      `<a href='${item.code}'>🐙 Code</a> |` :
+      `<a href='${item.code}' class="btn btn-primary" >🐙 Code</a> |` :
       ``
-    const linkedTitle = `<a href='${item.url}'>${item.title}</a>`
+    const linkedTitle = `<a href='${item.url}'  >${item.title}</a>`
     return `<div class="card">
       ${imageHTml}
       <h3>${item.isTechnical ? '💻' : "🎨"} ${linkedTitle}</h3>
       <p>[${item.type}] ${item.description }</p>
       <p>${link} | ${codeLink}
          Rating: ${ item.rating }</p>
-    </div>`;
+    </div>
+    
+    
+    
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        ${imageHTml}
+        <div class="card-body">
+          <h5 class="card-title">${item.isTechnical ? '💻' : "🎨"} ${linkedTitle}</h5>
+          <p class="card-text">
+            [${item.type}] ${item.description }
+            See https://getbootstrap.com/docs/4.0/components/card/
+          </p>
+          <div class="alert alert-primary" role="alert">
+            This is a primary alert—check it out!
+          </div>
+          <p>${link} | ${codeLink}
+            Rating: ${ item.rating }</p>
+        </div>
+      </div>
+    </div>
+    
+    
+    `;
   });
 
   //🖌🌈
