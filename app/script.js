@@ -76,7 +76,7 @@ const data = [
     is_gcp: true,
     isTechnical: false,
     isFood: false,
-    tags: 'gcp, infra, iam',
+    tags: 'gcp, infra, iam, gcloud, organization, folders, projects',
     //. https://github.com/palladius/genai-googlecloud-scripts/blob/main/03-ruby-medium-article-slurper/outputs/medium-latest-articles.palladiusbonton.txt.json
     //song: "The Road Goes On Forever"
 },
@@ -86,8 +86,8 @@ const data = [
     isTechnical: true,
     higlight: true, // todo implement
     rating: 4.9,
-    type: 'application',
-    tags: 'video, SRE, AoS',
+    type: 'video',
+    tags: 'video, SRE, AoS, youtube',
     image: 'sounds-good-riccardo-meme.jpeg',
     url: 'https://www.youtube.com/watch?v=E3ReKuJ8ewA',
   },
@@ -96,12 +96,11 @@ const data = [
     description: 'An article demonstrating my hatred for Spaghetti Bolognese (Bolonnaise?) - as an Italian',
     isTechnical: false,
     isFood: true,
-    tags: '',
+    tags: 'pasta, italy, bologna, bolonnaise',
     type: 'article',
     rating: 2.9,
     url: 'https://medium.com/@palladiusbonton/spaghetti-bolognese-dont-exist-1-2088d85909dd',
-    // url2: https://ricc.rocks/en/posts/www.palladius.it/spaghetti-bolognese-dont-exist/
-    image: 'spagbol.jpg'
+    image: 'spagbol.jpg',
   },
   {
     title: 'Spag Bol doesnt exist (ricc rocks)',
@@ -109,7 +108,7 @@ const data = [
     isTechnical: false,
     isFood: true,
     type: 'article',
-    tags: '',
+    tags: 'pasta, italy, bologna, bolonnaise',
     rating: 3.9,
     url: 'https://ricc.rocks/en/posts/www.palladius.it/spaghetti-bolognese-dont-exist/',
     image: 'spagbol.jpg'
@@ -119,7 +118,7 @@ const data = [
     description: 'Riccardo family-run business, 🐧🧳Puffin Tours, inspired by Starter Kit to build Rails applications fast, with Ralix, Tailwind and more!',
     isTechnical: true,
     type: 'application',
-    tags: '',
+    tags: 'ruby, rails, tailwind',
     rating: 4.9,
     url: 'https://puffintours-prod-rjjr63dzrq-ew.a.run.app/',
     image: 'puffinMcMuffin.png'
@@ -269,11 +268,7 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
         </div>
         <div class="card-body">
           
-            <p>${item.isTechnical ? '💻' : "🎨"} ${item.type}  <kbd>${ item.rating }</kbd> </p>
-          
-
-
-          
+            <p>${item.isTechnical ? '💻' : "🎨"} ${item.type}  <kbd>${ item.rating }</kbd> </p>         
           ${imageHTml}
           <p class="card-text alert alert-primary">
              ${item.description }
