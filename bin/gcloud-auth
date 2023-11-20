@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Change and adapt at your conveninence
+gcloud config set project storazzo-8ab31
+gcloud config set account ricc@google.com
+gcloud auth login
+
+# currently this works from CLI but doesnt on CB since the Service Account doesnt seem to have the right access.

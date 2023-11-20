@@ -1,11 +1,13 @@
 
 PROJECT = storazzo-8ab31
+VERSION = $(shell cat app/VERSION)
+VERSIONED_APP = jsss:v$(VERSION)
 
 docker-build:
-	time docker build -t jsss .
+	time docker build -t "$(VERSIONED_APP)" .
 
 docker-run: docker-build
-	docker run -it -p 8080:8080 jsss
+	docker run -it -p 8080:8080 "$(VERSIONED_APP)"
 
 # https://medium.com/google-cloud/google-cloud-run-or-how-to-run-your-static-website-in-5-minutes-and-much-more-dbe8f2804395
 # 1. build
