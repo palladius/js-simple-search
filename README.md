@@ -38,13 +38,13 @@ Sources:
 ## Result
 
 
- <img src='https://github.com/palladius/js-simple-seach/raw/main/docs/jsss-video.gif' align='center' />
+ <img src='https://github.com/palladius/js-simple-seach/raw/main/docs/jsss-video-5x.gif' align='center' />
 
- <img src='https://github.com/palladius/js-simple-seach/raw/main/app/images/Screenshot 2023-11-18 at 15.25.21.png' height='200' align='right' />
 
-Video:
+Video (WIP - I've never embedded a video in my life):
 
+<!-- 
  <video src='docs/jsss-video.mov' width=180/>
-
+-->
  <video src='https://github.com/palladius/js-simple-seach/raw/main/docs/jsss-video.mov' width=180/>
 
