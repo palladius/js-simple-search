@@ -16,11 +16,13 @@ steps:
   args: ['build', '-t', 'europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search', '.']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
+  id: docker push
   args: ['push', 'europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search']
 # Deploy container image to Cloud Run
 # first needs this (I hope as one off I just did from my computer)
 # gcloud auth configure-docker europe-west1-docker.pkg.dev
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  id: Push to on CloudRun
   entrypoint: gcloud
   args: ['run', 'deploy', 'js-simple-search-cb', '--image', 'europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search', '--region', 'europe-west1']
 images:
