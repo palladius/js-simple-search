@@ -143,6 +143,7 @@ const data = [
     type: 'application',
     rating: 4.9,
     url: 'https://genai-kids-stories-gcloud-poor-cdlu26pd4q-ew.a.run.app/', // broken
+    code: 'https://github.com/palladius/genai-kids-stories',
     isCodePrivate: false,
     tags: '',
   },
@@ -249,39 +250,26 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
       `<a href='${item.code}' class="btn btn-primary" >🐙 Code</a> ` :
       ``
     const linkedTitle = `<a href='${item.url}'  >${item.title}</a>`
-    return `
-    <!-- 
-    <div class="card">
-      <h3>${item.isTechnical ? '💻' : "🎨"} ${linkedTitle}</h3>
-      ${imageHTml}
-      <p>[${item.type}] ${item.description }</p>
-      <p>${link} | ${codeLink}
-         Rating: <kbd>${ item.rating }</kbd></p>
-    </div>
-    -->
-    
-    
-    
-    <div class="card border-info mb-3" style="width: 18rem;">
-        <div class="card-header">
-          <h5 class="card-title"> ${linkedTitle} </h5>
-        </div>
-        <div class="card-body">
-          
-            <p>${item.isTechnical ? '💻' : "🎨"} ${item.type}  <kbd>${ item.rating }</kbd> </p>         
+    return ` 
+        <div class="card border-info mb-3" style="width: 18rem;">
+          <div class="card-header">
+            <h5 class="card-title"> ${linkedTitle} 
+              <kbd>${ item.rating }</kbd>
+            </h5>
+          </div>
           ${imageHTml}
-          <p class="card-text alert alert-primary">
-             ${item.description }
-          </p>
-          <p>
-            ${link}
-            ${codeLink}
-          </p>
+          <!-- <div class="card-body">      -->
+            <p class="card-text alert alert-primary">
+              ${item.description }
+            </p>
+            <p class="card-text alert alert-notice" >${item.isTechnical ? '💻' : "🎨"} ${item.type}  ${item.isCodePrivate ? '🔑' : '🚪'} </p>         
+            <p>
+              ${link}
+              ${codeLink}
+            </p>
+          <!-- </div> -->
         </div>
       </div>
-    </div>
-    
-    
     `;
   });
 
