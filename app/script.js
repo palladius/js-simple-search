@@ -213,6 +213,18 @@ const data = [
     isCodePrivate: false,
   },
 
+  // Riccardo wedding https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s
+  {
+    title: 'Riccardo/Kate wedding video',
+    image: 'aj-alphabet.jpeg',
+    description: 'My Wedding video, purposely positioned to my Swiss German speech -= which basically nobody understood but that was the idea!',
+    isTechnical: false,
+    type: 'application',
+    tags: 'family, riccardo, kate, matrimonio, wedding, swiss-german, switzertuutsch',
+    rating: 4.9,
+    url: 'https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s', // TODO host this
+    //  isCodePrivate: false,
+  },
 ];
 
 function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
