@@ -216,8 +216,8 @@ const data = [
   // Riccardo wedding https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s
   {
     title: 'Riccardo/Kate wedding video',
-    image: 'aj-alphabet.jpeg',
-    description: 'My Wedding video, purposely positioned to my Swiss German speech -= which basically nobody understood but that was the idea!',
+    image: 'ricc-kate-dancing.png',
+    description: 'My Wedding video, purposely positioned to my Swiss German speech - which basically nobody understood but that was the idea!',
     isTechnical: false,
     type: 'application',
     tags: 'family, riccardo, kate, matrimonio, wedding, swiss-german, switzertuutsch',
@@ -262,10 +262,10 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
       `<a href='${item.code}' class="btn btn-primary" >🐙 Code</a> ` :
       ``
     const linkedTitle = `<a href='${item.url}'  >${item.title}</a>`
-    return ` 
+    return `
         <div class="card border-info mb-3" style="width: 18rem;">
           <div class="card-header">
-            <h5 class="card-title"> ${linkedTitle} 
+            <h5 class="card-title"> ${linkedTitle}
               <kbd>${ item.rating }</kbd>
             </h5>
           </div>
@@ -274,7 +274,7 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
             <p class="card-text alert alert-primary">
               ${item.description }
             </p>
-            <p class="card-text alert alert-notice" >${item.isTechnical ? '💻' : "🎨"} ${item.type}  ${item.isCodePrivate ? '🔑' : '🚪'} </p>         
+            <p class="card-text alert alert-notice" >${item.isTechnical ? '💻' : "🎨"} ${item.type}  ${item.isCodePrivate ? '🔑' : '🚪'} </p>
             <p>
               ${link}
               ${codeLink}
