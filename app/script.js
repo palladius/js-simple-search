@@ -2,6 +2,8 @@ const searchInput = document.getElementById('search-input');
 const isTechnicalCheckbox = document.getElementById('isTechnicalCheckbox');
 const sortBySelect = document.getElementById('sort-by');
 const searchResults = document.getElementById('search-results');
+// TPDP Substitute  id="app-version" with remote Version from github :)
+const appVersionSnippet = document.getElementById('app-version'); // by Riccardo
 
 //const dataRemote = [];
 // const data = fetch('https://raw.githubusercontent.com/palladius/js-simple-search/main/app/data.json') // raw content
@@ -17,6 +19,14 @@ const fetchData = async () => {
 };
 // Export the fetched data as a constant
 const fetchedData = fetchData();
+
+const fetchAppVersion = async () => {
+  const response = await fetch("https://raw.githubusercontent.com/palladius/js-simple-search/main/app/VERSION");
+  const remoteVersion = await response.text();
+  return remoteVersion;
+}
+
+const fetchedAppVersion = fetchAppVersion();
 
 const data = [
   // {
@@ -305,6 +315,17 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
   //🖌🌈
 
   searchResults.innerHTML = resultElements.join('');
+  (async () => {
+    console.log('before start');
+
+    //await start();
+    //await fetchedAppVersion;
+    const trimmedVersion = (await fetchAppVersion()).trim()
+    appVersionSnippet.innerHTML = trimmedVersion || 'sobenme  - trimmedVersion not found';
+
+    console.log('after start');
+  })();
+
 }
 
 searchInput.addEventListener('keyup', (event) => {
@@ -333,3 +354,5 @@ addEventListener("load", (event) => {
   //div.getElementsByTagName("input")[0].setSelectionRange(div.getElementsByTagName("input")[0].value.length,div.getElementsByTagName("input")[0].value.length,"forward");
 
 });
+
+
