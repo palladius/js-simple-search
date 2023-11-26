@@ -3,8 +3,22 @@ const isTechnicalCheckbox = document.getElementById('isTechnicalCheckbox');
 const sortBySelect = document.getElementById('sort-by');
 const searchResults = document.getElementById('search-results');
 
-const dataRemote = [];
-const data = [
+//const dataRemote = [];
+// const data = fetch('https://raw.githubusercontent.com/palladius/js-simple-search/main/app/data.json') // raw content
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log(data);
+//     // Use the data here
+//   });
+const fetchData = async () => {
+  const response = await fetch('https://raw.githubusercontent.com/palladius/js-simple-search/main/app/data.json');
+  const data = await response.json();
+  return data;
+};
+// Export the fetched data as a constant
+const fetchedData = fetchData();
+
+const dataCached = [
   // {
   //   title: 'Pistachio Ice Cream',
   //   description: 'A delicious and creamy ice cream made with pistachios.',
@@ -229,6 +243,8 @@ const data = [
 ];
 
 function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
+
+  const data = fetchedData;
   let filteredResults = data;
 
   if (searchTerm) {
