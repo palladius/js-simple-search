@@ -183,6 +183,7 @@ const data = [
     rating: 4.5,
     code: 'https://github.com/palladius/js-simple-search',
     url: 'https://js-simple-search-bsl7ylv4hq-ew.a.run.app/', // TODO host this
+    gdoc: "https://docs.google.com/document/d/1q_RZjeHtQn8mYfJw3UDwkJF6M-bRxYY3LGDU5VArBRI/edit",
     isCodePrivate: false,
   },
   // Asset DB todo
@@ -279,13 +280,16 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
 
   const resultElements = filteredResults.map(item => {
     const link = item.url ?
-      `<a href='${item.url}'  class="btn btn-success"  >🕸️ URL</a>` :
+      `<a href='${item.url}'  class="btn btn-outline-success"  >🕸️ URL</a>` :
       `<a href='https://www.google.com/search?q=${item.title}'  class="btn btn-info"  >🔎 Google this!</a>\n`
     const imageHTml = item.image ?
       `<img src="images/${ item.image }" alt="${ item.title }" class="card-img-top rounded">` :
       ``
     const codeLink = item.code ?
-      `<a href='${item.code}' class="btn btn-primary" >🐙 Code</a> ` :
+      `<a href='${item.code}' class="btn btn-info" >🐙 Code</a> ` :
+      ``
+    const gdocLink = item.gdoc ?
+      `<a href='${item.gdoc}' class="btn btn-primary" >📑 Doc</a> ` :
       ``
     const linkedTitle = `<a href='${item.url}'  >${item.title}</a>`
     return `
@@ -304,12 +308,14 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
             <p>
               ${link}
               ${codeLink}
+              ${gdocLink}
             </p>
           <!-- </div> -->
         </div>
       </div>
     `;
   });
+  // https://getbootstrap.com/docs/5.0/components/buttons/
 
   //🖌🌈
 
