@@ -8,6 +8,7 @@
 # vars:
 #   new_ar: "europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search"
 #   old_gcrio: 'gcr.io/storazzo-8ab31c/js-simple-search-cb'
+# GOOD AR: europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search
 
 steps:
 # Build the container image
