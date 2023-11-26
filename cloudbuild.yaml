@@ -6,28 +6,48 @@
 # SA: build-sa@stora zzo-8ab31.iam.gserviceaccount.com
 ############################################################
 # vars:
-#   new_ar: "europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search"
+#   new_ar: "europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search/jsss"
 #   old_gcrio: 'gcr.io/${PROJECT_ID}c/js-simple-search-cb'
-# GOOD AR: europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search
+# GOOD AR: europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search/jsss
 
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
   id: docker build
-  args: ['build', '-t', 'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search', '.']
+  args: ['build', '-t', 'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search/jsss', '.']
 # Push the container image to Container Registry
+
+
+# Seems ok look: https://github.com/GoogleCloudPlatform/cloud-build-samples/blob/main/basic-config/cloudbuild.yaml
 - name: 'gcr.io/cloud-builders/docker'
-  id: docker push
-  args: ['push', 'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search']
+  id: "docker pushami"
+  args: [
+    'push',
+    'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search/jsss']
 # Deploy container image to Cloud Run
 # first needs this (I hope as one off I just did from my computer)
 # gcloud auth configure-docker europe-west1-docker.pkg.dev
+
+
+  # Entrypoint, timeout and environment variables
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'gcloud'
+  timeout: 240s
+  args: ['compute', 'instances',
+          'create-with-container', 'my-vm-name',
+          '--container-image',
+          'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search/jsss']
+  env:
+    - 'CLOUDSDK_COMPUTE_REGION=europe-west1'
+    - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-a'
+
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   id: Push to on CloudRun
   entrypoint: gcloud
-  args: ['run', 'deploy', 'js-simple-search-cb', '--image', 'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search', '--region', 'europe-west1']
+  args: ['run', 'deploy', 'js-simple-search-cb', '--image', 'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search/jsss', '--region', 'europe-west1']
+
 images:
-- 'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search'
+- europe-west1-docker.pkg.dev/$PROJECT_ID/js-simple-search/jsss
 
 options:
   # This allows for missing ENV variables.
