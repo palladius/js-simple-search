@@ -69,15 +69,15 @@
     "song": "The Road Goes On Forever"
     },
     {
-    "title": "Art of SLOs video",
-    "description": "Riccardo first video for Google.",
-    "isTechnical": true,
-    "higlight": true, // todo implement
-    "rating": 4.9,
-    "type": "video",
-    "tags": "video, SRE, AoS, youtube",
-    "image": "sounds-good-riccardo-meme.jpeg",
-    "url": "https://www.youtube.com/watch?v=E3ReKuJ8ewA",
+        "title": "Art of SLOs video",
+        "description": "Riccardo first video for Google.",
+        "isTechnical": true,
+        "higlight": true,
+        "rating": 4.9,
+        "type": "video",
+        "tags": "video, SRE, AoS, youtube",
+        "image": "sounds-good-riccardo-meme.jpeg",
+        "url": "https://www.youtube.com/watch?v=E3ReKuJ8ewA"
     },
     {
     "title": "Spag Bol doesnt exist (medium) 🇮🇹",
