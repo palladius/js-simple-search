@@ -44,6 +44,7 @@ steps:
           'create-with-container', 'jsss-vm',
           '--container-image',
           'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search/jsss']
+          # TODO network-tag: jsss-vm
   env:
     - 'CLOUDSDK_COMPUTE_REGION=europe-west1'
     - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
