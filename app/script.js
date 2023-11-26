@@ -3,6 +3,7 @@ const isTechnicalCheckbox = document.getElementById('isTechnicalCheckbox');
 const sortBySelect = document.getElementById('sort-by');
 const searchResults = document.getElementById('search-results');
 
+const dataRemote = [];
 const data = [
   // {
   //   title: 'Pistachio Ice Cream',
@@ -130,7 +131,7 @@ const data = [
     description: 'POC for a PromptDB, where you can store prompts, prompt templates, issue them and vote them!',
     isTechnical: true,
     type: 'application',
-    rating: 4.6,
+    rating: 3.5,
     url: 'https://genai.prompteer.it/', // broken
     isCodePrivate: true,
     tags: '',
@@ -141,7 +142,7 @@ const data = [
     description: 'GenAI Kids Story with Vertexc AI and Palm API, wow!',
     isTechnical: true,
     type: 'application',
-    rating: 4.9,
+    rating: 4.6,
     url: 'https://genai-kids-stories-gcloud-poor-cdlu26pd4q-ew.a.run.app/', // broken
     code: 'https://github.com/palladius/genai-kids-stories',
     isCodePrivate: false,
@@ -182,7 +183,7 @@ const data = [
     tags: 'RoR, GCP, bigmerge, search',
     isTechnical: true,
     type: 'application',
-    rating: 4.5,
+    rating: 3.9,
     code: 'https://github.com/palladius/gcp-cache',
     url: 'https://github.com/palladius/gcp-cache', // TODO host this
     isCodePrivate: false,
