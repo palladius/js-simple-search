@@ -1,33 +1,33 @@
 ############################################################
 # Would like to substitute them:
 ############################################################
-# project_id: storazzo-8ab31c
+# project_id: "storazz o-8ab31"
 # region:     europe-west1
-# SA: build-sa@storazzo-8ab31.iam.gserviceaccount.com
+# SA: build-sa@stora zzo-8ab31.iam.gserviceaccount.com
 ############################################################
 # vars:
-#   new_ar: "europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search"
-#   old_gcrio: 'gcr.io/storazzo-8ab31c/js-simple-search-cb'
-# GOOD AR: europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search
+#   new_ar: "europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search"
+#   old_gcrio: 'gcr.io/${PROJECT_ID}c/js-simple-search-cb'
+# GOOD AR: europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search
 
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
   id: docker build
-  args: ['build', '-t', 'europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search', '.']
+  args: ['build', '-t', 'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search', '.']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
   id: docker push
-  args: ['push', 'europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search']
+  args: ['push', 'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search']
 # Deploy container image to Cloud Run
 # first needs this (I hope as one off I just did from my computer)
 # gcloud auth configure-docker europe-west1-docker.pkg.dev
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   id: Push to on CloudRun
   entrypoint: gcloud
-  args: ['run', 'deploy', 'js-simple-search-cb', '--image', 'europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search', '--region', 'europe-west1']
+  args: ['run', 'deploy', 'js-simple-search-cb', '--image', 'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search', '--region', 'europe-west1']
 images:
-- 'europe-west1-docker.pkg.dev/storazzo-8ab31/js-simple-search'
+- 'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search'
 
 options:
   # This allows for missing ENV variables.
