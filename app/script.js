@@ -3,7 +3,6 @@ const isTechnicalCheckbox = document.getElementById('isTechnicalCheckbox');
 const sortBySelect = document.getElementById('sort-by');
 const searchResults = document.getElementById('search-results');
 // TPDP Substitute  id="app-version" with remote Version from github :)
-const appVersionSnippet = document.getElementById('app-version'); // by Riccardo
 
 //const dataRemote = [];
 // const data = fetch('https://raw.githubusercontent.com/palladius/js-simple-search/main/app/data.json') // raw content
@@ -315,11 +314,11 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
   //🖌🌈
 
   searchResults.innerHTML = resultElements.join('');
+  // Carlessian set of the version - WOW!
   (async () => {
     console.log('before start');
 
-    //await start();
-    //await fetchedAppVersion;
+    const appVersionSnippet = document.getElementById('app-version'); // by Riccardo
     const trimmedVersion = (await fetchAppVersion()).trim()
     appVersionSnippet.innerHTML = trimmedVersion || 'sobenme  - trimmedVersion not found';
 
