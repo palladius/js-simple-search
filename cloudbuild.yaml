@@ -29,22 +29,25 @@ steps:
 # gcloud auth configure-docker europe-west1-docker.pkg.dev
 
 
-  # Entrypoint, timeout and environment variables
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  entrypoint: 'gcloud'
-  timeout: 240s
-  args: ['compute', 'instances',
-          'create-with-container', 'my-vm-name',
-          '--container-image',
-          'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search/jsss']
-  env:
-    - 'CLOUDSDK_COMPUTE_REGION=europe-west1'
-    - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-a'
 
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   id: Push to on CloudRun
   entrypoint: gcloud
   args: ['run', 'deploy', 'js-simple-search-cb', '--image', 'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search/jsss', '--region', 'europe-west1']
+
+  # Entrypoint, timeout and environment variables
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  id: Push to GCE never done before.
+  entrypoint: 'gcloud'
+  timeout: 240s
+  args: ['compute', 'instances',
+          'create-with-container', 'jsss-vm',
+          '--container-image',
+          'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search/jsss']
+  env:
+    - 'CLOUDSDK_COMPUTE_REGION=europe-west1'
+    - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
+
 
 images:
 - europe-west1-docker.pkg.dev/$PROJECT_ID/js-simple-search/jsss
