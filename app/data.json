@@ -1,29 +1,29 @@
 [
     {
-        "title": "Pistachio Ice Cream",
-        "description": "A delicious and creamy ice cream made with pistachios.",
-        "isTechnical": false,
-        "isFood": true,
-        "url": "http://blah",
-        "image": "pistacchio.jpg",
-        "rating": 4.5
+    "title": "Pistachio Ice Cream",
+    "description": "A delicious and creamy ice cream made with pistachios.",
+    "isTechnical": false,
+    "isFood": true,
+    "url": "http://blah",
+    "image": "pistacchio.jpg",
+    "rating": 4.5
     },
     {
-        "title": "Chocolate Chip Cookies",
-        "description": "Classic chewy chocolate chip cookies.",
-        "isTechnical": false,
-        "isFood": true,
-        "url": "https://www.google.com/search?q=Chocolate+Chip+Cookies",
-        "image": "JT-Chocolate-Chip-Cookies-blog480.jpg",
-        "rating": 4.2
+    "title": "Chocolate Chip Cookies",
+    "description": "Classic chewy chocolate chip cookies.",
+    "isTechnical": false,
+    "isFood": true,
+    "url": "https://www.google.com/search?q=Chocolate+Chip+Cookies",
+    "image": "JT-Chocolate-Chip-Cookies-blog480.jpg",
+    "rating": 4.2
     },
     {
-        "title": "Apple Pie",
-        "description": "A warm and comforting apple pie with a flaky crust.",
-        "isTechnical": false,
-        "isFood": true,
-        "rating": 4.8,
-        "image": "best-apple-pie-recipe-from-scratch-8.jpg"
+    "title": "Apple Pie",
+    "description": "A warm and comforting apple pie with a flaky crust.",
+    "isTechnical": false,
+    "isFood": true,
+    "rating": 4.8,
+    "image": "best-apple-pie-recipe-from-scratch-8.jpg"
     },
     {
     "title": "Pasta Primavera",
@@ -46,7 +46,12 @@
     "description": "An amazing article on how to use GenAI and Ruby to automatically extract keywords!",
     "isTechnical": true,
     "type": "article",
-    "tags": "genai, palm, vertexai, gcp",
+    "tags": [
+        "genai",
+        "palm",
+        "vertexai",
+        "gcp"
+    ],
     "image": "medium-ragno-rosso.png",
     "url": "https://medium.com/@palladiusbonton/parse-medium-articles-with-genai-and-add-some-fun-02fe9d30475a",
     "code": "https://github.com/palladius/genai-googlecloud-scripts/tree/main/03-ruby-medium-article-slurper",
@@ -64,18 +69,29 @@
     "is_gcp": true,
     "isTechnical": false,
     "isFood": false,
-    "tags": "gcp, infra, iam, gcloud, organization, folders, projects",
-    "article": "https://github.com/palladius/genai-googlecloud-scripts/blob/main/03-ruby-medium-article-slurper/outputs/medium-latest-articles.palladiusbonton.txt.json",
-    "song": "The Road Goes On Forever"
+    "tags": [
+        "gcp",
+        "infra",
+        "iam",
+        "gcloud",
+        "organization",
+        "folders",
+        "projects"
+    ]
     },
     {
         "title": "Art of SLOs video",
         "description": "Riccardo first video for Google.",
         "isTechnical": true,
-        "higlight": true,
+        "highlight": true,
         "rating": 4.9,
         "type": "video",
-        "tags": "video, SRE, AoS, youtube",
+        "tags": [
+            "video",
+            "SRE",
+            "AoS",
+            "youtube"
+        ],
         "image": "sounds-good-riccardo-meme.jpeg",
         "url": "https://www.youtube.com/watch?v=E3ReKuJ8ewA"
     },
@@ -88,7 +104,7 @@
     "type": "article",
     "rating": 2.9,
     "url": "https://medium.com/@palladiusbonton/spaghetti-bolognese-dont-exist-1-2088d85909dd",
-    "image": "spagbol.jpg",
+    "image": "spagbol.jpg"
     },
     {
     "title": "Spag Bol doesnt exist (ricc rocks)",
@@ -99,7 +115,7 @@
     "tags": "pasta, italy, bologna, bolonnaise",
     "rating": 3.9,
     "url": "https://ricc.rocks/en/posts/www.palladius.it/spaghetti-bolognese-dont-exist/",
-    "image": "spagbol.jp"'
+    "image": "spagbol.jpg"
     },
     {
     "title": "Puffin Tours 🐧🧳",
@@ -109,7 +125,7 @@
     "tags": "ruby, rails, tailwind",
     "rating": 4.9,
     "url": "https://puffintours-prod-rjjr63dzrq-ew.a.run.app/",
-    "image": "puffinMcMuffin.pn"'
+    "image": "puffinMcMuffin.png"
     },
     {
     "title": "Prompteer ⚔️🤺🛡",
@@ -120,7 +136,7 @@
     "rating": 3.5,
     "url": "https://genai.prompteer.it/",
     "isCodePrivate": true,
-    "tags": "",
+    "tags": ""
     },
     {
     "title": "GenAI Kids Stories ✨",
@@ -132,9 +148,8 @@
     "url": "https://genai-kids-stories-gcloud-poor-cdlu26pd4q-ew.a.run.app/",
     "code": "https://github.com/palladius/genai-kids-stories",
     "isCodePrivate": false,
-    "tags": "",
+    "tags": ""
     },
-    //
     {
     "title": "JS Simple Search ✨",
     "image": "js-simple-search.png",
@@ -145,7 +160,7 @@
     "rating": 4.5,
     "code": "https://github.com/palladius/js-simple-search",
     "url": "https://js-simple-search-bsl7ylv4hq-ew.a.run.app/",
-    "isCodePrivate": false,
+    "isCodePrivate": false
     },
     {
     "title": "DHH Vanilla 7.0.1",
@@ -157,7 +172,7 @@
     "rating": 4.5,
     "code": "gprojects:/rails/dhh-vanilla-701/",
     "url": "https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/",
-    "isCodePrivate": true,
+    "isCodePrivate": true
     },
     {
     "title": "GCP Cache",
@@ -169,7 +184,7 @@
     "rating": 3.9,
     "code": "https://github.com/palladius/gcp-cache",
     "url": "https://github.com/palladius/gcp-cache",
-    "isCodePrivate": false,
+    "isCodePrivate": false
     },
     {
     "title": "Pasta",
@@ -181,9 +196,8 @@
     "rating": 4.9,
     "code": "https://github.com/palladius/pasta",
     "url": "https://github.com/palladius/pasta",
-    "isCodePrivate": false,
+    "isCodePrivate": false
     },
-    //
     {
     "title": "AJ Alphabet",
     "image": "aj-alphabet.jpeg",
@@ -194,7 +208,7 @@
     "rating": 4.5,
     "code": "https://github.com/palladius/baby-alphabet",
     "url": "https://aj-alphabet.palladi.us/",
-    "isCodePrivate": false,
+    "isCodePrivate": false
     },
     {
     "title": "Riccardo/Kate wedding video",
@@ -204,6 +218,6 @@
     "type": "application",
     "tags": "family, riccardo, kate, matrimonio, wedding, swiss-german, switzertuutsch",
     "rating": 4.9,
-    "url": "https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s",
-    },
+    "url": "https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s"
+}
 ]
