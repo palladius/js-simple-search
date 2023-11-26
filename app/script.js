@@ -18,7 +18,7 @@ const fetchData = async () => {
 // Export the fetched data as a constant
 const fetchedData = fetchData();
 
-const dataCached = [
+const data = [
   // {
   //   title: 'Pistachio Ice Cream',
   //   description: 'A delicious and creamy ice cream made with pistachios.',
@@ -244,7 +244,7 @@ const dataCached = [
 
 function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
 
-  const data = fetchedData;
+  //const data = fetchedData;
   let filteredResults = data;
 
   if (searchTerm) {
