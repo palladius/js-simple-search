@@ -240,6 +240,7 @@ const data = [
 
   // Riccardo wedding https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s
   {
+    date: '2016-09-03',
     title: 'Riccardo/Kate wedding video',
     image: 'ricc-kate-dancing.png',
     description: 'My Wedding video, purposely positioned to my Swiss German speech - which basically nobody understood but that was the idea!',
@@ -249,6 +250,24 @@ const data = [
     rating: 4.9,
     url: 'https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s', // TODO host this
     //  isCodePrivate: false,
+  },
+  // 
+  {
+    date: '2023-11-28',
+    title: 'Semantic Search with Embedings on Rails',
+    image: 'semantic-search-rails.png',
+    description: 'Imagine if you can search articles or PDFs automatically chunked for you \
+    by a Ruby on rails App',
+    isTechnical: false,
+    type: 'application',
+    tags: 'rails, app, embeddings, genai, semantic_search',
+    rating: 4.8,
+    url: 'https://dhh-rails-pgv-langchain-v3ydafeb7q-uc.a.run.app/', // TODO host this
+    code: '~/git/gprojects/genai/20231122-rails-pgvector-langchainrb/dhhrails7-with-embeddings/',
+    app_urls: {
+      cloud_build: 'https://console.cloud.google.com/cloud-build/builds?e=-13802955&mods=logs_tg_staging&project=ric-cccwiki',
+      artifact_repo: 'https://console.cloud.google.com/artifacts/docker/ric-cccwiki/us-central1/dhh-rails-pgv-langchain/rails-langchainrb-pgvector-app?e=-13802955&mods=logs_tg_staging',
+    }
   },
 ];
 
