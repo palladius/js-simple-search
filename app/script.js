@@ -255,7 +255,7 @@ const data = [
   {
     date: '2023-11-28',
     title: 'Semantic Search with Embedings on Rails',
-    image: 'semantic-search-rails.png',
+    image: 'semantic-search-rails.png', // there's a second one..
     description: 'Imagine if you can search articles or PDFs automatically chunked for you \
     by a Ruby on rails App',
     isTechnical: false,
@@ -265,8 +265,9 @@ const data = [
     url: 'https://dhh-rails-pgv-langchain-v3ydafeb7q-uc.a.run.app/', // TODO host this
     code: '~/git/gprojects/genai/20231122-rails-pgvector-langchainrb/dhhrails7-with-embeddings/',
     app_urls: {
-      cloud_build: 'https://console.cloud.google.com/cloud-build/builds?e=-13802955&mods=logs_tg_staging&project=ric-cccwiki',
-      artifact_repo: 'https://console.cloud.google.com/artifacts/docker/ric-cccwiki/us-central1/dhh-rails-pgv-langchain/rails-langchainrb-pgvector-app?e=-13802955&mods=logs_tg_staging',
+      db_cloudsql: 'https://console.cloud.google.com/sql/instances/pg-dev/connections/summary?project=ric-cccwiki',
+      cloud_build: 'https://console.cloud.google.com/cloud-build/builds?project=ric-cccwiki',
+      artifact_repo: 'https://console.cloud.google.com/artifacts/docker/ric-cccwiki/us-central1/dhh-rails-pgv-langchain/rails-langchainrb-pgvector-app',
     }
   },
 ];
