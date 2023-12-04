@@ -254,16 +254,17 @@ const data = [
   // 
   {
     date: '2023-11-28',
-    title: 'Semantic Search with Embedings on Rails',
+    title: 'Semantic Search with Embeddings on Rails',
     image: 'semantic-search-rails.png', // there's a second one..
     description: 'Imagine if you can search articles or PDFs automatically chunked for you \
-    by a Ruby on rails App',
-    isTechnical: false,
+    by a Ruby on rails App (using Google Palm API or OpenAI, whichever)',
+    isTechnical: true,
     type: 'application',
-    tags: 'rails, app, embeddings, genai, semantic_search',
+    tags: 'rails, app, embeddings, genai, semantic_search, palm_api, openai',
     rating: 4.8,
     url: 'https://dhh-rails-pgv-langchain-v3ydafeb7q-uc.a.run.app/', // TODO host this
     code: '~/git/gprojects/genai/20231122-rails-pgvector-langchainrb/dhhrails7-with-embeddings/',
+    gdoc: 'https://docs.google.com/document/d/1wysWbMh1I5ZizE9fNX5lCjHRy9Sp4vX3QzyDcI1Oc-M/edit',
     app_urls: {
       db_cloudsql: 'https://console.cloud.google.com/sql/instances/pg-dev/connections/summary?project=ric-cccwiki',
       cloud_build: 'https://console.cloud.google.com/cloud-build/builds?project=ric-cccwiki',
