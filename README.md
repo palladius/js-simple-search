@@ -1,10 +1,10 @@
-This morning I was babysitting with my kids and asking Bard an existential question I had for years: is there a way to build a VERY simple, rudimental client-side script?
+This morning I was babysitting with my kids and asking Bard an existential question I had for years: *is there a way to build a VERY simple, rudimental client-side script*?
 
 Well, Bard answered me with an instantly working `index.html` and `script.js`! I was amazed.
 
 More on the Genesis in this <a href="https://medium.com/@palladiusbonton/hey-bard-write-a-responsive-javascript-search-engine-app-for-me-b2585e55385e">Medium Article</a>.
 
-The app is currently served by cloud run here: https://js-simple-search-bsl7ylv4hq-ew.a.run.app/ 
+The app is currently served by cloud run here: <https://js-simple-search-bsl7ylv4hq-ew.a.run.app/>
 
 ## How I did it?
 
@@ -13,7 +13,7 @@ So how did I do it? I asked Bard, yes!
 
 ### Initial question
 
-Q. I would like to build a small and responsive search engine. The DB Is small and static so I don't need anything complicated. I just want to have a frontend JavaScript where you start typing a word and it searches for all the elements matching this word in title or description. The only important thing to me is responsiveness so every time you type a letter it starts selecting just things matching it, so you want to write say "pistachio", the selection should start kicking in already with 'p', 'pi', 'pis', and so on. Can you help me write the code?
+**Q.** I would like to build a small and responsive search engine. The DB Is small and static so I don't need anything complicated. I just want to have a frontend JavaScript where you start typing a word and it searches for all the elements matching this word in title or description. The only important thing to me is responsiveness so every time you type a letter it starts selecting just things matching it, so you want to write say "pistachio", the selection should start kicking in already with 'p', 'pi', 'pis', and so on. Can you help me write the code?
 
 A. Sure, here's the JavaScript code for a small and responsive search engine that works with a static database:
 
@@ -44,11 +44,8 @@ This is a GIF of how the result looks like:
 
  <img src='https://github.com/palladius/js-simple-seach/raw/main/docs/jsss-video-5x.gif' align='center' />
 
-
-
-<!-- 
+<!--
 Video (WIP - I've never embedded a video in my life):
  <video src='docs/jsss-video.mov' width=180/>
  <video src='https://github.com/palladius/js-simple-seach/raw/main/docs/jsss-video.mov' width=180/>
 -->
-

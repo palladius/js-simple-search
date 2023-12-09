@@ -144,9 +144,11 @@ const data = [
     type: 'application',
     tags: 'ruby, rails, tailwind',
     rating: 4.9,
+    isCodePrivate: false,
+    code: 'https://github.com/palladius/ror7-tailwind-puffintours/',
+    doc: 'https://docs.google.com/document/d/1gN5f2-9vNwvgS4H029dp6vrPTP2rQU9SnvMToYrq2Ec/edit',
     url: 'https://puffintours-prod-rjjr63dzrq-ew.a.run.app/',
     image: 'puffinMcMuffin.png'
-
   },
   {
     title: 'Prompteer ⚔️🤺🛡',

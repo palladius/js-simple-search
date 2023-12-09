@@ -2,7 +2,8 @@
 # Changelog
 
 ```
-2023-11-20 v0.8 Version remote lookup WORKS!!!
+2023-12-09 v0.11 Added PuffinTours (code/gdoc) to see if the RemoteVersion REALLY works :)
+2023-11-20 v0.10 Version remote lookup WORKS!!!
 2023-11-20 v0.8 Implemented remote lookup but still finds parsing error although seems fixed so reversed to previous.
 2023-11-20 v0.7 Better CSS and imagery.
 ;;;
