@@ -146,7 +146,7 @@ const data = [
     rating: 4.9,
     isCodePrivate: false,
     code: 'https://github.com/palladius/ror7-tailwind-puffintours/',
-    doc: 'https://docs.google.com/document/d/1gN5f2-9vNwvgS4H029dp6vrPTP2rQU9SnvMToYrq2Ec/edit',
+    gdoc: 'https://docs.google.com/document/d/1gN5f2-9vNwvgS4H029dp6vrPTP2rQU9SnvMToYrq2Ec/edit',
     url: 'https://puffintours-prod-rjjr63dzrq-ew.a.run.app/',
     image: 'puffinMcMuffin.png'
   },
@@ -253,7 +253,7 @@ const data = [
     url: 'https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s', // TODO host this
     //  isCodePrivate: false,
   },
-  // 
+  //
   {
     date: '2023-11-28',
     title: 'Semantic Search with Embeddings on Rails',
