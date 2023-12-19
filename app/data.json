@@ -109,86 +109,86 @@
     },
     // Asset DB todo
     {
-      "title": 'DHH Vanilla 7.0.1',
-      "image": 'dhh-vanilla-701.png',
-      "description": 'My lighthouse app for Rails! Contains all Carlessian Apps. See https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/ricc_apps.json if you dont believe me!',
-      "tags": 'RoR, lighthouse, Rails, DHH, bigmerge',
+      "title": "DHH Vanilla 7.0.1",
+      "image": "dhh-vanilla-701.png",
+      "description": "My lighthouse app for Rails! Contains all Carlessian Apps. See https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/ricc_apps.json if you dont believe me!",
+      "tags": "RoR, lighthouse, Rails, DHH, bigmerge",
       "isTechnical": true,
-      "type": 'application',
+      "type": "application",
       "rating": 4.5,
-      "code": 'gprojects:/rails/dhh-vanilla-701/', // Ricc only
-      "url": 'https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/', // TODO host this
+      "code": "gprojects:/rails/dhh-vanilla-701/", // Ricc only
+      "url": "https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/", // TODO host this
       "isCodePrivate": true,
     },
     {
-      "title": 'GCP Cache',
-      "image": 'gcp-cache.png',
-      "description": 'GCP Cache to quickly search through your local assets on GCP!',
-      "tags": 'RoR, GCP, bigmerge, search',
+      "title": "GCP Cache",
+      "image": "gcp-cache.png",
+      "description": "GCP Cache to quickly search through your local assets on GCP!",
+      "tags": "RoR, GCP, bigmerge, search",
       "isTechnical": true,
-      "type": 'application',
+      "type": "application",
       "rating": 3.9,
-      "code": 'https://github.com/palladius/gcp-cache',
-      "url": 'https://github.com/palladius/gcp-cache', // TODO host this
+      "code": "https://github.com/palladius/gcp-cache",
+      "url": "https://github.com/palladius/gcp-cache", // TODO host this
       "isCodePrivate": false,
     },
     {
-      "title": 'Pasta DATA_JSON',
-      "image": 'tagliatelle-red-green-yellow.png',
-      "description": 'How to get correct associations of pasta. eg, bolognese or carbonara, which goes on spaghetti?',
+      "title": "Pasta DATA_JSON",
+      "image": "tagliatelle-red-green-yellow.png",
+      "description": "How to get correct associations of pasta. eg, bolognese or carbonara, which goes on spaghetti?",
       "isTechnical": true,
-      "tags": 'pasta',
-      "type": 'application',
+      "tags": "pasta",
+      "type": "application",
       "rating": 4.9,
-      "code": 'https://github.com/palladius/pasta',
-      "url": 'https://github.com/palladius/pasta', // TODO host this
+      "code": "https://github.com/palladius/pasta",
+      "url": "https://github.com/palladius/pasta", // TODO host this
       "isCodePrivate": false,
     },
     //
     {
-      "title": 'AJ Alphabet',
-      "image": 'aj-alphabet.jpeg',
-      "description": 'how do you teach the alphabet to your kid? You store a personal image per letter, and good luck with H , K , X and Y',
+      "title": "AJ Alphabet",
+      "image": "aj-alphabet.jpeg",
+      "description": "how do you teach the alphabet to your kid? You store a personal image per letter, and good luck with H , K , X and Y",
       "isTechnical": true,
-      "type": 'application',
-      "tags": 'family, alessandro, personal',
+      "type": "application",
+      "tags": "family, alessandro, personal",
       "rating": 4.5,
-      "code": 'https://github.com/palladius/baby-alphabet',
-      "url": 'https://aj-alphabet.palladi.us/', // TODO host this
+      "code": "https://github.com/palladius/baby-alphabet",
+      "url": "https://aj-alphabet.palladi.us/", // TODO host this
       "isCodePrivate": false,
     },
 
     // Riccardo wedding https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s
     {
-      date: '2016-09-03',
-      "title": 'Riccardo/Kate wedding video',
-      "image": 'ricc-kate-dancing.png',
-      "description": 'My Wedding video, purposely positioned to my Swiss German speech - which basically nobody understood but that was the idea!',
+      "date": "2016-09-03",
+      "title": "Riccardo/Kate wedding video",
+      "image": "ricc-kate-dancing.png",
+      "description": "My Wedding video, purposely positioned to my Swiss German speech - which basically nobody understood but that was the idea!",
       "isTechnical": false,
-      "type": 'application',
-      "tags": 'family, riccardo, kate, matrimonio, wedding, swiss-german, switzertuutsch',
+      "type": "application",
+      "tags": "family, riccardo, kate, matrimonio, wedding, swiss-german, switzertuutsch",
       "rating": 4.9,
-      "url": 'https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s', // TODO host this
+      "url": "https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s", // TODO host this
       //  "isCodePrivate": false,
     },
     //
     {
-      date: '2023-11-28',
-      "title": 'Semantic Search with Embeddings on Rails',
-      "image": 'semantic-search-rails.png', // there's a second one..
-      "description": 'Imagine if you can search articles or PDFs automatically chunked for you \
-      by a Ruby on rails App (using Google Palm API or OpenAI, whichever)',
+      "date": "2023-11-28",
+      "title": "Semantic Search with Embeddings on Rails",
+      "image": "semantic-search-rails.png", // there"s a second one..
+      "description": "Imagine if you can search articles or PDFs automatically chunked for you \
+      by a Ruby on rails App (using Google Palm API or OpenAI, whichever)",
       "isTechnical": true,
-      "type": 'application',
-      "tags": 'rails, app, embeddings, genai, semantic_search, palm_api, openai',
+      "type": "application",
+      "tags": "rails, app, embeddings, genai, semantic_search, palm_api, openai",
       "rating": 4.8,
-      "url": 'https://dhh-rails-pgv-langchain-v3ydafeb7q-uc.a.run.app/', // TODO host this
-      "code": '~/git/gprojects/genai/20231122-rails-pgvector-langchainrb/dhhrails7-with-embeddings/',
-      "gdoc": 'https://docs.google.com/document/d/1wysWbMh1I5ZizE9fNX5lCjHRy9Sp4vX3QzyDcI1Oc-M/edit',
-      app_urls: {
-        db_cloudsql: 'https://console.cloud.google.com/sql/instances/pg-dev/connections/summary?project=ric-cccwiki',
-        cloud_build: 'https://console.cloud.google.com/cloud-build/builds?project=ric-cccwiki',
-        artifact_repo: 'https://console.cloud.google.com/artifacts/docker/ric-cccwiki/us-central1/dhh-rails-pgv-langchain/rails-langchainrb-pgvector-app',
+      "url": "https://dhh-rails-pgv-langchain-v3ydafeb7q-uc.a.run.app/", // TODO host this
+      "code": "~/git/gprojects/genai/20231122-rails-pgvector-langchainrb/dhhrails7-with-embeddings/",
+      "gdoc": "https://docs.google.com/document/d/1wysWbMh1I5ZizE9fNX5lCjHRy9Sp4vX3QzyDcI1Oc-M/edit",
+      "app_urls": {
+        "db_cloudsql": "https://console.cloud.google.com/sql/instances/pg-dev/connections/summary?project=ric-cccwiki",
+        "cloud_build": "https://console.cloud.google.com/cloud-build/builds?project=ric-cccwiki",
+        "artifact_repo": "https://console.cloud.google.com/artifacts/docker/ric-cccwiki/us-central1/dhh-rails-pgv-langchain/rails-langchainrb-pgvector-app",
       }
     }
   ]
