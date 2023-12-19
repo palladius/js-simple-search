@@ -181,7 +181,7 @@
     "app_urls": {
       "db_cloudsql": "https://console.cloud.google.com/sql/instances/pg-dev/connections/summary?project=ric-cccwiki",
       "cloud_build": "https://console.cloud.google.com/cloud-build/builds?project=ric-cccwiki",
-      "artifact_repo": "https://console.cloud.google.com/artifacts/docker/ric-cccwiki/us-central1/dhh-rails-pgv-langchain/rails-langchainrb-pgvector-app",
-    }
+      "artifact_repo": "https://console.cloud.google.com/artifacts/docker/ric-cccwiki/us-central1/dhh-rails-pgv-langchain/rails-langchainrb-pgvector-app"
+                }
   }
 ]
