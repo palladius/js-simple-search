@@ -109,14 +109,14 @@
     {
         "title": "DHH Vanilla 7.0.1",
         "image": "dhh-vanilla-701.png",
-      "description": "My lighthouse app for Rails! Contains all Carlessian Apps. See https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/ricc_apps.json if you dont believe me!",
-      "tags": "RoR, lighthouse, Rails, DHH, bigmerge",
-      "isTechnical": true,
-      "type": "application",
-      "rating": 4.5,
-      "code": "gprojects:/rails/dhh-vanilla-701/", // Ricc only
-      "url": "https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/", // TODO host this
-      "isCodePrivate": true,
+        "description": "My lighthouse app for Rails! Contains all Carlessian Apps. See https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/ricc_apps.json if you dont believe me!",
+        "tags": "RoR, lighthouse, Rails, DHH, bigmerge",
+        "isTechnical": true,
+        "type": "application",
+        "rating": 4.5,
+        "code": "gprojects:/rails/dhh-vanilla-701/", // Ricc only
+        "url": "https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/", // TODO host this
+        "isCodePrivate": true
     },
     {
       "title": "GCP Cache",
@@ -128,7 +128,7 @@
       "rating": 3.9,
       "code": "https://github.com/palladius/gcp-cache",
       "url": "https://github.com/palladius/gcp-cache", // TODO host this
-      "isCodePrivate": false,
+      "isCodePrivate": false
     },
     {
       "title": "Pasta DATA_JSON",
@@ -140,7 +140,7 @@
       "rating": 4.9,
       "code": "https://github.com/palladius/pasta",
       "url": "https://github.com/palladius/pasta", // TODO host this
-      "isCodePrivate": false,
+      "isCodePrivate": false
     },
     {
       "title": "AJ Alphabet",
@@ -152,7 +152,7 @@
       "rating": 4.5,
       "code": "https://github.com/palladius/baby-alphabet",
       "url": "https://aj-alphabet.palladi.us/", // TODO host this
-      "isCodePrivate": false,
+      "isCodePrivate": false
     },
     {
       "date": "2016-09-03",
@@ -164,14 +164,13 @@
       "tags": "family, riccardo, kate, matrimonio, wedding, swiss-german, switzertuutsch",
       "rating": 4.9,
       "url": "https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s", // TODO host this
-      "isCodePrivate": false,
+      "isCodePrivate": false
     },
     {
       "date": "2023-11-28",
       "title": "Semantic Search with Embeddings on Rails",
       "image": "semantic-search-rails.png", // theres a second one..
-      "description": "Imagine if you can search articles or PDFs automatically chunked for you \
-      by a Ruby on rails App (using Google Palm API or OpenAI, whichever)",
+      "description": "Imagine if you can search articles or PDFs automatically chunked for you by a Ruby on rails App (using Google Palm API or OpenAI, whichever)",
       "isTechnical": true,
       "type": "application",
       "tags": "rails, app, embeddings, genai, semantic_search, palm_api, openai",
