@@ -36,7 +36,7 @@
       "url": "https://www.youtube.com/watch?v=E3ReKuJ8ewA"
     },
     {
-        "title": "Spag Bol doesnt exist (medium) ", // 🇮🇹 might give issue
+        "title": "Spag Bol doesnt exist (medium) :it", // :it emoji might give issue
         "description": "An article demonstrating my hatred for Spaghetti Bolognese (Bolonnaise?) - as an Italian",
         "isTechnical": false,
         "isFood": true,
@@ -107,8 +107,8 @@
         "isCodePrivate": false
     },
     {
-      "title": "DHH Vanilla 7.0.1",
-      "image": "dhh-vanilla-701.png",
+        "title": "DHH Vanilla 7.0.1",
+        "image": "dhh-vanilla-701.png",
       "description": "My lighthouse app for Rails! Contains all Carlessian Apps. See https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/ricc_apps.json if you dont believe me!",
       "tags": "RoR, lighthouse, Rails, DHH, bigmerge",
       "isTechnical": true,
