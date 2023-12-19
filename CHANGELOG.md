@@ -2,6 +2,7 @@
 # Changelog
 
 ```
+2023-12-19 v1.02 Adding my Gemini article
 2023-12-19 v1.01 Parsing data from GitHub, not internally anymore (FIXED)
 2023-12-19 v0.12 Parsing data from GitHub, not internally anymore (broken)
 2023-12-09 v0.11 Added PuffinTours (code/gdoc) to see if the RemoteVersion REALLY works :)
