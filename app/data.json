@@ -1,20 +1,13 @@
 [
     {
-      "title": 'Automated insights on Medium articles with GenAI and Ruby!',
-      "description": 'An amazing article on how to use GenAI and Ruby to automatically extract keywords!',
+      "title": "Automated insights on Medium articles with GenAI and Ruby!",
+      "description": "An amazing article on how to use GenAI and Ruby to automatically extract keywords!",
       "isTechnical": true,
-      "type": 'article',
-      "tags": 'genai, palm, vertexai, gcp',
-      "image": 'medium-ragno-rosso.png',
-      "url": 'https://medium.com/@palladiusbonton/parse-medium-articles-with-genai-and-add-some-fun-02fe9d30475a',
-      "code": 'https://github.com/palladius/genai-googlecloud-scripts/tree/main/03-ruby-medium-article-slurper',
-      // URLsv2: [
-      //   "code": 'blah',
-      //   article: 'blah',
-      //   demo: 'blah',
-      //   video: 'blah',
-      //   // TODO refactor this way, seems more scalable.
-      // ],
+      "type": "article",
+      "tags": "genai, palm, vertexai, gcp",
+      "image": "medium-ragno-rosso.png",
+      "url": "https://medium.com/@palladiusbonton/parse-medium-articles-with-genai-and-add-some-fun-02fe9d30475a",
+      "code": "https://github.com/palladius/genai-googlecloud-scripts/tree/main/03-ruby-medium-article-slurper",
       "rating": 4.7
     },
     {
@@ -22,27 +15,25 @@
       "description": "The author provides a detailed guide on how to migrate GCP projects across organizations using the gcloud command-line tool. They also discuss some of the challenges they faced during the migration process and how they overcame them.",
       "url": "https://medium.com/google-cloud/how-to-migrate-projects-across-organizations-c7e254ab90af?source=rss-b5293b96912f------2",
       "accuracy": 9,
-      "image": 'migrate-orgs.png',
-      "type": 'article',
+      "image": "migrate-orgs.png",
+      "type": "article",
       "rating": 4.5,
       "year_publication": 2023,
       "is_gcp": true,
       "isTechnical": false,
       "isFood": false,
-      "tags": 'gcp, infra, iam, gcloud, organization, folders, projects',
-      //. https://github.com/palladius/genai-googlecloud-scripts/blob/main/03-ruby-medium-article-slurper/outputs/medium-latest-articles.palladiusbonton.txt.json
-      //song: "The Road Goes On Forever"
-  },
+      "tags": "gcp, infra, iam, gcloud, organization, folders, projects"
+    },
     {
-      "title": 'Art of SLOs video',
-      "description": 'Riccardo first video for Google.',
+      "title": "Art of SLOs video",
+      "description": "Riccardo first video for Google.",
       "isTechnical": true,
-      "higlight": true, // todo implement
+      "higlight": true,
       "rating": 4.9,
-      "type": 'video',
-      "tags": 'video, SRE, AoS, youtube',
-      "image": 'sounds-good-riccardo-meme.jpeg',
-      "url": 'https://www.youtube.com/watch?v=E3ReKuJ8ewA',
+      "type": "video",
+      "tags": "video, SRE, AoS, youtube",
+      "image": "sounds-good-riccardo-meme.jpeg",
+      "url": "https://www.youtube.com/watch?v=E3ReKuJ8ewA"
     },
     {
       "title": 'Spag Bol doesnt exist (medium) 🇮🇹',
