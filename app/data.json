@@ -167,6 +167,18 @@
     "isCodePrivate": false
   },
   {
+    "date": "2023-12-16",
+    "title": "Hey Gemini, explain me these pictures — in bash 🧑🏽‍💻",
+    "image": "gemini-bifido.png",
+    "description": "Gemini is out! Excited to post my amazing bash script for Gemini multimodal!",
+    "isTechnical": true,
+    "type": "article",
+    "tags": "genai, gemini, google, GCP, saga, Palm, bash",
+    "rating": 4.8,
+    "url": "https://medium.com/@palladiusbonton/hey-gemini-explain-me-these-pictures-in-bash-06c03d0d0512",
+    "isCodePrivate": false
+  },
+  {
     "date": "2023-11-28",
     "title": "Semantic Search with Embeddings on Rails",
     "image": "semantic-search-rails.png",
