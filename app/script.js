@@ -11,13 +11,13 @@ const searchResults = document.getElementById('search-results');
 //     console.log(data);
 //     // Use the data here
 //   });
-const fetchData = async () => {
-  const response = await fetch('https://raw.githubusercontent.com/palladius/js-simple-search/main/app/data.json');
-  const data = await response.json();
-  return data;
-};
+// const fetchData = async () => {
+//   const response = await fetch('https://raw.githubusercontent.com/palladius/js-simple-search/main/app/data.json');
+//   const data = await response.json();
+//   return data;
+// };
 // Export the fetched data as a constant
-const fetchedData = fetchData();
+//const fetchedData = fetchData();
 
 const fetchAppVersion = async () => {
   const response = await fetch("https://raw.githubusercontent.com/palladius/js-simple-search/main/app/VERSION");
@@ -41,7 +41,7 @@ const localData = [];
 async function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
 
   const response = await fetch('https://raw.githubusercontent.com/palladius/js-simple-search/main/app/data.json');
-  const data = await response.json();
+  const data = await (response.json());
 
   //const github_version_response = await fetch('https://raw.githubusercontent.com/palladius/js-simple-search/main/app/VERSION');
   //const github_version = await github_version_response.text();
