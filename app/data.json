@@ -36,7 +36,7 @@
       "url": "https://www.youtube.com/watch?v=E3ReKuJ8ewA"
     },
     {
-        "title": "Spag Bol doesnt exist (medium) 🇮🇹",
+        "title": "Spag Bol doesnt exist (medium) ", // 🇮🇹 might give issue
         "description": "An article demonstrating my hatred for Spaghetti Bolognese (Bolonnaise?) - as an Italian",
         "isTechnical": false,
         "isFood": true,
