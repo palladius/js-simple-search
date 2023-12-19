@@ -107,7 +107,6 @@
         "gdoc": "https://docs.google.com/document/d/1q_RZjeHtQn8mYfJw3UDwkJF6M-bRxYY3LGDU5VArBRI/edit",
         "isCodePrivate": false,
     },
-    // Asset DB todo
     {
       "title": "DHH Vanilla 7.0.1",
       "image": "dhh-vanilla-701.png",
@@ -144,7 +143,6 @@
       "url": "https://github.com/palladius/pasta", // TODO host this
       "isCodePrivate": false,
     },
-    //
     {
       "title": "AJ Alphabet",
       "image": "aj-alphabet.jpeg",
@@ -157,8 +155,6 @@
       "url": "https://aj-alphabet.palladi.us/", // TODO host this
       "isCodePrivate": false,
     },
-
-    // Riccardo wedding https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s
     {
       "date": "2016-09-03",
       "title": "Riccardo/Kate wedding video",
@@ -169,13 +165,12 @@
       "tags": "family, riccardo, kate, matrimonio, wedding, swiss-german, switzertuutsch",
       "rating": 4.9,
       "url": "https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s", // TODO host this
-      //  "isCodePrivate": false,
+      "isCodePrivate": false,
     },
-    //
     {
       "date": "2023-11-28",
       "title": "Semantic Search with Embeddings on Rails",
-      "image": "semantic-search-rails.png", // there"s a second one..
+      "image": "semantic-search-rails.png", // theres a second one..
       "description": "Imagine if you can search articles or PDFs automatically chunked for you \
       by a Ruby on rails App (using Google Palm API or OpenAI, whichever)",
       "isTechnical": true,
