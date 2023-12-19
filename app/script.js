@@ -27,7 +27,7 @@ const fetchAppVersion = async () => {
 
 const fetchedAppVersion = fetchAppVersion();
 
-const data = [
+const localData = [
   // {
   //   title: 'Pistachio Ice Cream',
   //   description: 'A delicious and creamy ice cream made with pistachios.',
@@ -215,7 +215,7 @@ const data = [
     isCodePrivate: false,
   },
   {
-    title: 'Pasta',
+    title: 'Pasta Script',
     image: 'tagliatelle-red-green-yellow.png',
     description: 'How to get correct associations of pasta. eg, bolognese or carbonara, which goes on spaghetti?',
     isTechnical: true,
@@ -274,11 +274,27 @@ const data = [
     }
   },
 ];
+  // let version = fetchAppVersion().then(text => {
+  //       console.log(text);
+  //   })
+  //   .catch(err => {
+  //       // Deal with the fact the chain failed
+  //   });
 
-function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
 
-  //const data = fetchedData;
+  // let version = fetchAppVersion().then(text => {
+
+async function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
+
+  const response = await fetch('https://raw.githubusercontent.com/palladius/js-simple-search/main/app/data.json');
+  const data = await response.json();
+
+  //const github_version_response = await fetch('https://raw.githubusercontent.com/palladius/js-simple-search/main/app/VERSION');
+  //const github_version = await github_version_response.text();
+
   let filteredResults = data;
+
+  //let filteredResults = localData;
 
   if (searchTerm) {
     filteredResults = filteredResults.filter(item => {
@@ -333,7 +349,10 @@ function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
               ${codeLink}
               ${gdocLink}
             </p>
-          <!-- </div> -->
+          <!-- </div>
+              it works! But i dont know how to position it v<b>$ { github_version }</b>
+          -->
+
         </div>
       </div>
     `;

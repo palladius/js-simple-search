@@ -2,6 +2,7 @@
 # Changelog
 
 ```
+2023-12-09 v0.12 Parsing data from GitHub, not internally anymore (!!)
 2023-12-09 v0.11 Added PuffinTours (code/gdoc) to see if the RemoteVersion REALLY works :)
 2023-11-20 v0.10 Version remote lookup WORKS!!!
 2023-11-?? v0.9  Better puffin tours (from Merge)
