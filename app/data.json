@@ -36,7 +36,7 @@
       "url": "https://www.youtube.com/watch?v=E3ReKuJ8ewA"
     },
     {
-        "title": "Spag Bol doesnt exist (medium) :it", // :it emoji might give issue
+        "title": "Spag Bol doesnt exist (medium) :it",
         "description": "An article demonstrating my hatred for Spaghetti Bolognese (Bolonnaise?) - as an Italian",
         "isTechnical": false,
         "isFood": true,
@@ -114,8 +114,8 @@
         "isTechnical": true,
         "type": "application",
         "rating": 4.5,
-        "code": "gprojects:/rails/dhh-vanilla-701/", // Ricc only
-        "url": "https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/", // TODO host this
+        "code": "gprojects:/rails/dhh-vanilla-701/",
+        "url": "https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/",
         "isCodePrivate": true
     },
     {
@@ -127,7 +127,7 @@
       "type": "application",
       "rating": 3.9,
       "code": "https://github.com/palladius/gcp-cache",
-      "url": "https://github.com/palladius/gcp-cache", // TODO host this
+      "url": "https://github.com/palladius/gcp-cache",
       "isCodePrivate": false
     },
     {
@@ -139,7 +139,7 @@
       "type": "application",
       "rating": 4.9,
       "code": "https://github.com/palladius/pasta",
-      "url": "https://github.com/palladius/pasta", // TODO host this
+      "url": "https://github.com/palladius/pasta",
       "isCodePrivate": false
     },
     {
@@ -151,7 +151,7 @@
       "tags": "family, alessandro, personal",
       "rating": 4.5,
       "code": "https://github.com/palladius/baby-alphabet",
-      "url": "https://aj-alphabet.palladi.us/", // TODO host this
+      "url": "https://aj-alphabet.palladi.us/",
       "isCodePrivate": false
     },
     {
@@ -163,19 +163,19 @@
       "type": "application",
       "tags": "family, riccardo, kate, matrimonio, wedding, swiss-german, switzertuutsch",
       "rating": 4.9,
-      "url": "https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s", // TODO host this
+      "url": "https://www.youtube.com/watch?v=K2Ke2C8UBq0&t=1350s",
       "isCodePrivate": false
     },
     {
       "date": "2023-11-28",
       "title": "Semantic Search with Embeddings on Rails",
-      "image": "semantic-search-rails.png", // theres a second one..
+      "image": "semantic-search-rails.png",
       "description": "Imagine if you can search articles or PDFs automatically chunked for you by a Ruby on rails App (using Google Palm API or OpenAI, whichever)",
       "isTechnical": true,
       "type": "application",
       "tags": "rails, app, embeddings, genai, semantic_search, palm_api, openai",
       "rating": 4.8,
-      "url": "https://dhh-rails-pgv-langchain-v3ydafeb7q-uc.a.run.app/", // TODO host this
+      "url": "https://dhh-rails-pgv-langchain-v3ydafeb7q-uc.a.run.app/",
       "code": "~/git/gprojects/genai/20231122-rails-pgvector-langchainrb/dhhrails7-with-embeddings/",
       "gdoc": "https://docs.google.com/document/d/1wysWbMh1I5ZizE9fNX5lCjHRy9Sp4vX3QzyDcI1Oc-M/edit",
       "app_urls": {
