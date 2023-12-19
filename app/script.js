@@ -4,20 +4,6 @@ const sortBySelect = document.getElementById('sort-by');
 const searchResults = document.getElementById('search-results');
 // TPDP Substitute  id="app-version" with remote Version from github :)
 
-//const dataRemote = [];
-// const data = fetch('https://raw.githubusercontent.com/palladius/js-simple-search/main/app/data.json') // raw content
-//   .then(response => response.json())
-//   .then(data => {
-//     console.log(data);
-//     // Use the data here
-//   });
-// const fetchData = async () => {
-//   const response = await fetch('https://raw.githubusercontent.com/palladius/js-simple-search/main/app/data.json');
-//   const data = await response.json();
-//   return data;
-// };
-// Export the fetched data as a constant
-//const fetchedData = fetchData();
 
 const fetchAppVersion = async () => {
   const response = await fetch("https://raw.githubusercontent.com/palladius/js-simple-search/main/app/VERSION");
@@ -27,16 +13,9 @@ const fetchAppVersion = async () => {
 
 const fetchedAppVersion = fetchAppVersion();
 
+// This used to contain the whole buridone which is now moved to
+// `data.json`!
 const localData = [];
-  // let version = fetchAppVersion().then(text => {
-  //       console.log(text);
-  //   })
-  //   .catch(err => {
-  //       // Deal with the fact the chain failed
-  //   });
-
-
-  // let version = fetchAppVersion().then(text => {
 
 async function filterSearchResults(searchTerm, isTechnicalFilter, sortBy) {
 
