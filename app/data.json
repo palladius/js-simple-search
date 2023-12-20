@@ -219,7 +219,7 @@
     {
     "title": "Ric Addressbook (old app) 💎",
     "image": "ricaddressbook.png",
-    "description": "This was my Google Contacts on Rails, along with an amazing Tag Cloud (friends in Dublin? Friends in Bologna? Coworkers? All easy to click and maintain). Unfortunately its very old in Rails 2.3 and ruby18, so in 2023 its practically garbage.",
+    "description": "This was my Google Contacts on Rails, along with an amazing Tag Cloud (friends in Dublin? Friends in Bologna? Coworkers? All easy to click and maintain). Unfortunately its very old in Rails 3 and ruby1X, so in 2023 its practically garbage.",
     "isTechnical": true,
     "type": "application",
     "tags": "app, ror3, rails, ruby",
