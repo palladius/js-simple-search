@@ -205,5 +205,25 @@
     "tags": "ruby, gem, library, lang, rubylang",
     "rating": 2.5,
     "url": "https://rubygems.org/profiles/palladius"
+    },
+    {
+    "title": "RicLife (old app) 💎",
+    "image": "rails.png",
+    "description": "Riclife used to be my most ambitious app ever, I did everything on it, from Google Maps, from keeping all my friends, and a graph of al of the connections (work, romantic, friendship). I built the most complicated and interesting graph ever which 'Facebook levati'. Unfortunately its very old in Rails 2.3 and ruby18, so in 2023 its practically garbage.",
+    "isTechnical": true,
+    "type": "application",
+    "tags": "app, ror2, ruby18, rails, ruby",
+    "rating": 3.0,
+    "url": "https://github.com/palladius/riclife"
+    },
+    {
+    "title": "Ric Addressbook (old app) 💎",
+    "image": "ricaddressbook.png",
+    "description": "This was my Google Contacts on Rails, along with an amazing Tag Cloud (friends in Dublin? Friends in Bologna? Coworkers? All easy to click and maintain). Unfortunately its very old in Rails 2.3 and ruby18, so in 2023 its practically garbage.",
+    "isTechnical": true,
+    "type": "application",
+    "tags": "app, ror3, rails, ruby",
+    "rating": 3.0,
+    "url": "https://github.com/palladius/ric_addressbook"
     }
 ]
