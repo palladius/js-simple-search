@@ -195,5 +195,15 @@
                   "cloud_build": "https://console.cloud.google.com/cloud-build/builds?project=ric-cccwiki",
                   "artifact_repo": "https://console.cloud.google.com/artifacts/docker/ric-cccwiki/us-central1/dhh-rails-pgv-langchain/rails-langchainrb-pgvector-app"
                 }
-  }
+    },
+    {
+    "title": "Riccardo Ruby Gems 💎",
+    "image": "rubygems.jpeg",
+    "description": "All of my red gold: ruby gems I've contributed over the years, mostly pointless! I've done most with echoe but now its obsoleted",
+    "isTechnical": true,
+    "type": "application",
+    "tags": "ruby, gem, library, lang, rubylang",
+    "rating": 2.5,
+    "url": "https://rubygems.org/profiles/palladius"
+    }
 ]
