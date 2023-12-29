@@ -225,5 +225,16 @@
     "tags": "app, ror3, rails, ruby",
     "rating": 3.0,
     "url": "https://github.com/palladius/ric_addressbook"
+    },
+    {
+    "title": "Scooby 🤿",
+    "image": "https://dhh-vanilla-701-prod-cdlu26pd4q-oa.a.run.app/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBY1U9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--98268a7d26db06f6b00df6b4275c4a64b3e4dd64/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVdscGFRPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--fa7e30843d35f549d092757da61b895ad04efaf4/palladius76_Scoobie_doo_with_a_scuba_mask_doing_scuba_diving_in_a556520a-d189-4dde-a7ac-db08125df4ae.png",
+    "description": "This is an amazingly visionary app i built while scuba diving in Raja Ampat, with little electricity and ~no internet.",
+    "isTechnical": true,
+    "type": "application",
+    "tags": "app, ror7, rails, ruby, scuba, wikipedia",
+    "rating": 4.0,
+    "gdoc": "https://docs.google.com/document/d/15PUguFkwDC-Z4HdlyJXOls9l6qQK4KXm_0rS039tdT8/edit",
+    "url": "https://scoobyng-auto-cdlu26pd4q-ez.a.run.app/"
     }
 ]
