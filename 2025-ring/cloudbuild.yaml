@@ -1,0 +1,26 @@
+steps:
+# 1. Build the image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'europe-west1-docker.pkg.dev/puffin-tours/geocities-ring/url-ring', '.']
+  dir: '2025-ring'
+
+# 2. Push the image to the registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'europe-west1-docker.pkg.dev/puffin-tours/geocities-ring/url-ring']
+  dir: '2025-ring'
+
+# 3. Deploy the image to Cloud Run
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args:
+  - 'run'
+  - 'deploy'
+  - 'url-ring'
+  - '--image'
+  - 'europe-west1-docker.pkg.dev/puffin-tours/geocities-ring/url-ring'
+  - '--region'
+  - 'europe-west1'
+  - '--platform'
+  - 'managed'
+  - '--allow-unauthenticated'
+  dir: '2025-ring'
