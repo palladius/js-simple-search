@@ -1,5 +1,7 @@
 # Running on puffintours since storazzo has been deleted i guess.
 # https://cloud.google.com/build/docs/deploying-builds/deploy-build-results-to-cloud-run
+# error - cant find SA.
+
 steps:
 # 1. Build the image
 - name: 'gcr.io/cloud-builders/docker'
