@@ -29,7 +29,13 @@ steps:
   - '--allow-unauthenticated'
   dir: '2025-ring'
 
-
+options:
+  # This allows for missing ENV variables.
+  substitution_option: 'ALLOW_LOOSE'
+  machineType: 'N1_HIGHCPU_8'
+#timeout: 1200s
+#images:
+#  - 'gcr.io/$PROJECT_ID/metarepo-trigger'
 # options:
 #   logging:
 
