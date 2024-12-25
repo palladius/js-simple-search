@@ -1,0 +1,12 @@
+[
+    {
+      "name": "Example Site",
+      "url": "https://www.example.com",
+      "image": "https://www.example.com/image.jpg"
+    },
+    {
+      "name": "Another Site",
+      "url": "https://www.anothersite.com",
+      "image": "https://www.anothersite.com/logo.png"
+    }
+  ]
