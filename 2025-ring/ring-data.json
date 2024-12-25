@@ -8,5 +8,15 @@
       "name": "Another Site",
       "url": "https://www.anothersite.com",
       "image": "https://www.anothersite.com/logo.png"
+    },
+    {
+        "name": "Palladius on Github",
+        "url": "https://github.com/palladius",
+        "image": "https://github.com/palladius.png"
+    },
+    {
+        "name": "PuffinTours PROD",
+        "url": "https://puffintours-prod-rjjr63dzrq-ew.a.run.app/",
+        "image": "https://puffintours-prod-rjjr63dzrq-ew.a.run.app/assets/logo/puffinMcMuffin-ba6bd1e6df79e2436e9a5238c366924aa817f75bd944ae86c72272d30d2eb8f6.png"
     }
   ]

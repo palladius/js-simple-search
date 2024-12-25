@@ -26,4 +26,7 @@ async function createURLRing(url) {
   }
 
   // Call the function with the URL of your JSON file
-  createURLRing('https://your-github-repo/url-data.json');
+  //createURLRing('https://your-github-repo/url-data.json');
+
+//  createURLRing('https://github.com/palladius/js-simple-search/raw/main/2025-ring/ring-data.json');
+  createURLRing('/ring-data.json');
