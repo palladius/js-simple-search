@@ -1,22 +1,21 @@
 [
-    {
-      "name": "Example Site",
-      "url": "https://www.example.com",
-      "image": "https://www.example.com/image.jpg"
-    },
+
     {
       "name": "Another Site",
-      "url": "https://www.anothersite.com",
-      "image": "https://www.anothersite.com/logo.png"
+      "url": "https://ricc.rocks/en/",
+      "image": "https://ricc.rocks/images/ricc-logo.png",
+      "description": "Riccardo's personal website."
     },
     {
         "name": "Palladius on Github",
         "url": "https://github.com/palladius",
-        "image": "https://github.com/palladius.png"
+        "image": "https://github.com/palladius.png",
+        "description": "This is a great website."
     },
     {
         "name": "PuffinTours PROD",
         "url": "https://puffintours-prod-rjjr63dzrq-ew.a.run.app/",
-        "image": "https://puffintours-prod-rjjr63dzrq-ew.a.run.app/assets/logo/puffinMcMuffin-ba6bd1e6df79e2436e9a5238c366924aa817f75bd944ae86c72272d30d2eb8f6.png"
+        "image": "https://puffintours-prod-rjjr63dzrq-ew.a.run.app/assets/logo/puffinMcMuffin-ba6bd1e6df79e2436e9a5238c366924aa817f75bd944ae86c72272d30d2eb8f6.png",
+        "description": "Riccardo family Blog."
     }
   ]

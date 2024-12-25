@@ -15,7 +15,25 @@ async function createURLRing(url) {
         imageElement.src = item.image;
         imageElement.alt = item.name;
 
+        // Add the name as text within the link
+const nameElement = document.createElement('span');
+nameElement.textContent = item.name;
+
+        const tooltip = document.createElement('div');
+        tooltip.classList.add('tooltip');
+        tooltip.textContent = item.description;
+        linkElement.appendChild(tooltip);
+
+        // Show/hide tooltip on hover
+        linkElement.addEventListener('mouseover', () => {
+        tooltip.style.display = 'block';
+        });
+        linkElement.addEventListener('mouseout', () => {
+        tooltip.style.display = 'none';
+        });
+
         linkElement.appendChild(imageElement);
+        linkElement.appendChild(nameElement); // Add the name element
         ringContainer.appendChild(linkElement);
       });
 
