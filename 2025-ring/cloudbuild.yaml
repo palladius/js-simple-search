@@ -28,3 +28,9 @@ steps:
   - 'managed'
   - '--allow-unauthenticated'
   dir: '2025-ring'
+
+
+# options:
+#   logging:
+
+#     logsBucket: gs://puffin-tours_cloudbuild/

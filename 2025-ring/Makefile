@@ -19,5 +19,14 @@ cloud-build-local:
 	gcloud config set project puffin-tours
 	cloud-build-local --config=cloudbuild.yaml --dryrun=false .
 
+cloud-build-submit:
+	gcloud config set project puffin-tours
+	gcloud builds submit . \
+		--service-account projects/puffin-tours/serviceAccounts/js-ring-cloud-builder@puffin-tours.iam.gserviceaccount.com \
+		--gcs-log-dir gs://puffin-tours_cloudbuild/
+
+auth:
+	gcloud auth login --update-adc
+
 # deploy:
 # 	gcloud run deploy url-ring --image europe-west1-docker.pkg.dev/puffin-tours/geocities-ring/url-ring --region europe-west1 --platform managed --allow-unauthenticated
