@@ -1,21 +1,38 @@
-const http = require('http');
-const fs = require('fs');
+const fastify = require('fastify')({ logger: true });
+const fs = require('fs/promises');
 
 const hostname = '127.0.0.1';
 const port = 3000;
 
-const server = http.createServer((req, res) => {
-  fs.readFile('index.html', (err, data) => {
-    if (err) {
-      res.writeHead(500);
-      res.end('Error loading index.html');
-    } else {
-      res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.end(data);
-    }
-  });
+// Cache the index.html content
+let indexHtmlCache;
+
+// Read index.html into memory on startup
+const loadIndexHtml = async () => {
+  try {
+    indexHtmlCache = await fs.readFile('index.html');
+  } catch (err) {
+    console.error('Failed to load index.html:', err);
+    process.exit(1);
+  }
+};
+
+// Route handler
+fastify.get('/', async (request, reply) => {
+  return reply
+    .type('text/html')
+    .send(indexHtmlCache);
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://<span class="math-inline">\{hostname\}\:</span>{port}/`);
-});
+// Start server
+const start = async () => {
+  try {
+    await loadIndexHtml();
+    await fastify.listen({ port, host: hostname });
+  } catch (err) {
+    fastify.log.error(err);
+    process.exit(1);
+  }
+};
+
+start();

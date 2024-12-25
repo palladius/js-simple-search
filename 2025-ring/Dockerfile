@@ -1,4 +1,6 @@
-FROM node:14-alpine
+# No, let's use a more recent Node version
+FROM node:20-alpine
+#FROM node:14-alpine
 
 WORKDIR /app
 
