@@ -16,7 +16,18 @@ const server = http.createServer((req, res) => {
         res.end(data);
       }
     });
-  } else {
+  }  else if (req.url === '/VERSION') {
+    // Serve the VERSION file
+    fs.readFile('VERSION', (err, data) => {
+      if (err) {
+        res.writeHead(500);
+        res.end('Error loading VERSION');
+      } else {
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end(data);
+      }
+    });
+  } else if (req.url === '/') {  // Handle requests for the root URL
     // Serve the main index.html for other requests
     fs.readFile('index.html', (err, data) => {
       if (err) {
@@ -27,6 +38,10 @@ const server = http.createServer((req, res) => {
         res.end(data);
       }
     });
+  } else {
+        // Handle any other unmatched requests (e.g., 404 Not Found)
+    res.writeHead(404);
+    res.end('Not Found');
   }
 });
 

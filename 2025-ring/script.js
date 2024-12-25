@@ -41,6 +41,25 @@ nameElement.textContent = item.name;
     } catch (error) {
       console.error('Error fetching or parsing JSON:', error);
     }
+
+    // Create Footer
+    try {
+      // ... (fetch and process JSON data) ...
+
+      // Read the version from the VERSION file
+      const versionResponse = await fetch('/VERSION');
+      const version = await versionResponse.text();
+
+      // Create the footer element
+      const footer = document.createElement('footer');
+      footer.innerHTML = `<hr><div class="footer"> Ring App version v${version}</div>`;
+
+      // Append the footer to the page
+      document.body.appendChild(footer);
+
+    } catch (error) {
+      console.error('Error fetching version or creating footer:', error);
+    }
   }
 
   // Call the function with the URL of your JSON file
