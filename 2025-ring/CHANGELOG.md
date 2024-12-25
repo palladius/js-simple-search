@@ -1,3 +1,8 @@
+## v0.3.4 2024-12-25
+
+- Added cloudbuild.yaml
+- Making it work with Google Cloud Run!
+
 ## v0.3.3 2024-12-25
 
 - Added style.css, spectacular yellow to red gradient!
