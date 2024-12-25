@@ -1,7 +1,7 @@
 [
 
     {
-      "name": "Another Site",
+      "name": "Ricc Rocks!",
       "url": "https://ricc.rocks/en/",
       "image": "https://ricc.rocks/images/ricc-logo.png",
       "description": "Riccardo's personal website."
@@ -10,12 +10,24 @@
         "name": "Palladius on Github",
         "url": "https://github.com/palladius",
         "image": "https://github.com/palladius.png",
-        "description": "This is a great website."
+        "description": "Riccardo's Github profile."
     },
     {
         "name": "PuffinTours PROD",
         "url": "https://puffintours-prod-rjjr63dzrq-ew.a.run.app/",
         "image": "https://puffintours-prod-rjjr63dzrq-ew.a.run.app/assets/logo/puffinMcMuffin-ba6bd1e6df79e2436e9a5238c366924aa817f75bd944ae86c72272d30d2eb8f6.png",
         "description": "Riccardo family Blog."
+    },
+    {
+        "name": "Riccardo's Ruby Gems",
+        "url": "https://rubygems.org/profiles/palladius",
+        "image": "https://rubygems.org/users/46741/avatar.jpeg?size=300&theme=light",
+        "description": "Riccardo's Ruby Gems."
+    },
+    {
+        "name": "Gemini News Crawler",
+        "url": "https://github.com/palladius/gemini-news-crawler",
+        "image": "https://github.com/palladius/gemini-news-crawler/raw/main/docs/GeminewsArchitecture.png?raw=true",
+        "description": "How can we get an LLM to be updated to today’s news? Gen AI is great at answering questions.. from the past. After the LLM was trained, all you can do is RAG. How about crawling the web for latest news with Gemini for multimodal extraction and offering summarization by your favorite topic? It all gets more exciting thanks to Andrei’s langchainrb gem."
     }
   ]
