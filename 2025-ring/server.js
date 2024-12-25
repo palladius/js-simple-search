@@ -1,38 +1,35 @@
-const fastify = require('fastify')({ logger: true });
-const fs = require('fs/promises');
+const http = require('http');
+const fs = require('fs');
 
 const hostname = '127.0.0.1';
 const port = 3000;
 
-// Cache the index.html content
-let indexHtmlCache;
-
-// Read index.html into memory on startup
-const loadIndexHtml = async () => {
-  try {
-    indexHtmlCache = await fs.readFile('index.html');
-  } catch (err) {
-    console.error('Failed to load index.html:', err);
-    process.exit(1);
+const server = http.createServer((req, res) => {
+  if (req.url === '/iframe') {
+    // Read the contents of the iframe HTML file
+    fs.readFile('iframe.html', (err, data) => {
+      if (err) {
+        res.writeHead(500);
+        res.end('Error loading iframe.html');
+      } else {
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.end(data);
+      }
+    });
+  } else {
+    // Serve the main index.html for other requests
+    fs.readFile('index.html', (err, data) => {
+      if (err) {
+        res.writeHead(500);
+        res.end('Error loading index.html');
+      } else {
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.end(data);
+      }
+    });
   }
-};
-
-// Route handler
-fastify.get('/', async (request, reply) => {
-  return reply
-    .type('text/html')
-    .send(indexHtmlCache);
 });
 
-// Start server
-const start = async () => {
-  try {
-    await loadIndexHtml();
-    await fastify.listen({ port, host: hostname });
-  } catch (err) {
-    fastify.log.error(err);
-    process.exit(1);
-  }
-};
-
-start();
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
