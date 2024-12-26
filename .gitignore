@@ -2,3 +2,5 @@
 .DS_Store
 .echodo_history
 .echodo_history
+.gcloudconfig.yaml
+.git-privatize
