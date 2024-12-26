@@ -1,3 +1,9 @@
+## v.0.4.0 2024-12-26
+
+God I miss cursor.sh who would write this for me...
+
+- refactored `server.js`, now it serves everything including VERSION and JS!
+
 ## v0.3.5 2024-12-25
 
 - Added link to prod app

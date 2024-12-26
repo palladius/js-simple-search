@@ -1,5 +1,6 @@
 const http = require('http');
 const fs = require('fs');
+const path = require('path'); // Import the path module
 
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -39,9 +40,40 @@ const server = http.createServer((req, res) => {
       }
     });
   } else {
-        // Handle any other unmatched requests (e.g., 404 Not Found)
-    res.writeHead(404);
-    res.end('Not Found');
+    // Construct the file path
+    const filePath = path.join(__dirname, req.url);
+
+    // Check if the file exists
+    fs.access(filePath, fs.constants.F_OK, (err) => {
+      if (err) {
+        // File not found, handle the error (e.g., 404 Not Found)
+        res.writeHead(404);
+        res.end('Not Found');
+      } else {
+        // File exists, serve it
+        fs.readFile(filePath, (err, data) => {
+          if (err) {
+            res.writeHead(500);
+            res.end('Error reading file');
+          } else {
+            // Determine the content type based on the file extension
+            const extname = path.extname(filePath);
+            let contentType = 'text/plain'; // Default content type
+            if (extname === '.html') {
+              contentType = 'text/html';
+            } else if (extname === '.js') {
+              contentType = 'application/javascript';
+            } else if (extname === '.css') {
+              contentType = 'text/css';
+            }
+            // ... add more content types as needed ...
+
+            res.writeHead(200, { 'Content-Type': contentType });
+            res.end(data);
+          }
+        });
+      }
+    });
   }
 });
 
