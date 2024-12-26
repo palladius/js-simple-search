@@ -5,6 +5,7 @@ WORKDIR /app
 
 COPY . /app
 
+# If you want this, first add `npm init` and add your deps.
 #RUN npm install
 
 CMD ["node", "server.js"]

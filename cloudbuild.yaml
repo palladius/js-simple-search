@@ -31,23 +31,24 @@ steps:
 
 
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  id: Push to on CloudRun
+  id: Push to on CloudRun - works
   entrypoint: gcloud
   args: ['run', 'deploy', 'js-simple-search-cb', '--image', 'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search/jsss', '--region', 'europe-west1']
 
   # Entrypoint, timeout and environment variables
-- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-  id: Push to GCE never done before.
-  entrypoint: 'gcloud'
-  timeout: 240s
-  args: ['compute', 'instances',
-          'create-with-container', 'jsss-vm',
-          '--container-image',
-          'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search/jsss']
-          # TODO network-tag: jsss-vm
-  env:
-    - 'CLOUDSDK_COMPUTE_REGION=europe-west1'
-    - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
+# - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+#   id: Push to GCE never done before - gives error
+# # textPayload: "Step #3 - "Push to GCE never done before.": ERROR: (gcloud.compute.instances.create-with-container) Could not fetch resource:"
+#   entrypoint: 'gcloud'
+#   timeout: 240s
+#   args: ['compute', 'instances',
+#           'create-with-container', 'jsss-vm',
+#           '--container-image',
+#           'europe-west1-docker.pkg.dev/${PROJECT_ID}/js-simple-search/jsss']
+#           # TODO network-tag: jsss-vm
+#   env:
+#     - 'CLOUDSDK_COMPUTE_REGION=europe-west1'
+#     - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
 
 
 images:
