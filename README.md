@@ -4,6 +4,13 @@ In xmas 2024, I actually asked Gemini to build me a simple Ring, with a Geocitie
 
 I'm not sure if it's a good idea to share this, but I'm sharing it anyway.
 
+## GCP pointers
+
+* Doc:
+* CB:
+    * JSSS: https://console.cloud.google.com/cloud-build/triggers;region=global?project=puffin-tours
+    * Ring25: https://console.cloud.google.com/cloud-build/triggers;region=global?project=puffin-tours
+
 ## About
 
 This morning I was babysitting with my kids and asking Bard an existential question I had for years: *is there a way to build a VERY simple, rudimental client-side script*?
