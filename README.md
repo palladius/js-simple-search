@@ -10,6 +10,10 @@ I'm not sure if it's a good idea to share this, but I'm sharing it anyway.
 * CB:
     * JSSS: https://console.cloud.google.com/cloud-build/triggers;region=global?project=puffin-tours
     * Ring25: https://console.cloud.google.com/cloud-build/triggers;region=global?project=puffin-tours
+* Custom domains to CRun (wow! See TF):
+    * https://jsss.palladius.it
+    * https://ring.carlessos.org # probably should be different. Good for another CustomDomain with TF!
+
 
 ## About
 

@@ -1,4 +1,6 @@
 
+run-dev:
+	node server.js
 
 docker-build:
 #docker build -t 2025-ring .
