@@ -16,3 +16,7 @@ COPY . /app
 #RUN npm install
 
 CMD ["node", "server.js"]
+
+EXPOSE 8080
+#PORT 3000
+#CMD ["PORT=3000", "npm", "start" ] if needed
