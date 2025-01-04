@@ -26,3 +26,21 @@ gcloud-deploy-run: gcloud-build-submit
 		--region europe-west1 \
     	--role="roles/run.invoker"
 
+
+
+
+
+
+
+
+
+
+
+
+
+cloud-build-submit-ring2025:
+	gcloud config set project puffin-tours
+	gcloud builds submit 2025-ring/ \
+		--config=2025-ring/cloudbuild.yaml \
+		--service-account projects/puffin-tours/serviceAccounts/js-ring-cloud-builder@puffin-tours.iam.gserviceaccount.com \
+		--gcs-log-dir gs://puffin-tours_cloudbuild/

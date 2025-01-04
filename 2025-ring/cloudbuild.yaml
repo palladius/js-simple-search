@@ -33,7 +33,7 @@ options:
   # This allows for missing ENV variables.
   substitution_option: 'ALLOW_LOOSE'
   machineType: 'N1_HIGHCPU_8'
-  logging: CLOUD_LOGGING_ONLY
+#  logging: CLOUD_LOGGING_ONLY
 
 #timeout: 1200s
 #images:
