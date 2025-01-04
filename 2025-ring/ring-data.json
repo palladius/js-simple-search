@@ -1,39 +1,45 @@
 [
 
     {
-      "name": "Ricc Rocks!",
-      "url": "https://ricc.rocks/en/",
-      "image": "https://ricc.rocks/images/ricc-logo.png",
-      "description": "Riccardo's personal website."
+        "title": "Ricc Rocks!",
+        "url": "https://ricc.rocks/en/",
+        "image": "https://ricc.rocks/images/ricc-logo.png",
+        "description": "Riccardo's personal website.",
+        "rating": 4.2
     },
     {
-        "name": "Palladius on Github",
+        "title": "Palladius on Github",
         "url": "https://github.com/palladius",
         "image": "https://github.com/palladius.png",
-        "description": "Riccardo's Github profile."
+        "description": "Riccardo's Github profile.",
+        "rating": 4.2
     },
     {
-        "name": "PuffinTours PROD",
+        "title": "PuffinTours PROD",
         "url": "https://puffintours-prod-rjjr63dzrq-ew.a.run.app/",
         "image": "https://puffintours-prod-rjjr63dzrq-ew.a.run.app/assets/logo/puffinMcMuffin-ba6bd1e6df79e2436e9a5238c366924aa817f75bd944ae86c72272d30d2eb8f6.png",
-        "description": "Riccardo family Blog."
+        "description": "Riccardo family Blog.",
+        "rating": 4.2
     },
     {
-        "name": "Riccardo's Ruby Gems",
+        "title": "Riccardo's Ruby Gems",
         "url": "https://rubygems.org/profiles/palladius",
         "image": "https://rubygems.org/users/46741/avatar.jpeg?size=300&theme=light",
-        "description": "Riccardo's Ruby Gems."
+        "description": "Riccardo's Ruby Gems.",
+        "rating": 2.2
     },
     {
-        "name": "Gemini News Crawler",
+        "title": "Gemini News Crawler",
         "url": "https://github.com/palladius/gemini-news-crawler",
         "image": "https://github.com/palladius/gemini-news-crawler/raw/main/docs/GeminewsArchitecture.png?raw=true",
-        "description": "How can we get an LLM to be updated to today’s news? Gen AI is great at answering questions.. from the past. After the LLM was trained, all you can do is RAG. How about crawling the web for latest news with Gemini for multimodal extraction and offering summarization by your favorite topic? It all gets more exciting thanks to Andrei’s langchainrb gem."
+        "description": "How can we get an LLM to be updated to today’s news? Gen AI is great at answering questions.. from the past. After the LLM was trained, all you can do is RAG. How about crawling the web for latest news with Gemini for multimodal extraction and offering summarization by your favorite topic? It all gets more exciting thanks to Andrei’s langchainrb gem.",
+        "rating": 4.8
     },
     {
-        "name": "Ricc Geocities Ring",
+        "title": "Ricc Geocities Ring",
         "url": "https://url-ring-907790253572.europe-west1.run.app/",
         "image": "https://puffintours.com/assets/logo/puffinMcMuffin-ba6bd1e6df79e2436e9a5238c366924aa817f75bd944ae86c72272d30d2eb8f6.png",
-        "description": "Riccardo Ring - created with Gemini and Cloud Run."
+        "description": "Riccardo Ring - created with Gemini and Cloud Run.",
+        "rating": 4.3
     }
   ]

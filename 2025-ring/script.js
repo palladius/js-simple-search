@@ -9,7 +9,19 @@ async function createURLRing(url) {
       const ringContainer = document.createElement('div');
       ringContainer.classList.add('ring-container'); // Add a CSS class for styling
 
-      data.forEach(item => {
+      //const defaultMinRating = 3.2; // NotGiven
+      //const minRating = parseFloat(process.env.MIN_RATING) || defaultMinRating; // Default to 0 if MIN_RATING is not set or invalid
+
+      const filteredSites = data.filter(item => item.rating > 3.2); // Filter sites with rating above 4.5
+      // const filteredSites = data.filter(item => {
+      //   if (!item.rating) {
+      //     return true; // Include items without a rating
+      //   }
+      //   return item.rating >= minRating;
+      // });
+
+
+      filteredSites.forEach(item => {
         const linkElement = document.createElement('a');
         linkElement.href = item.url;
         linkElement.target = '_blank'; // Open link in a new tab
@@ -19,8 +31,10 @@ async function createURLRing(url) {
         imageElement.alt = item.name;
 
         // Add the name as text within the link
-const nameElement = document.createElement('span');
-nameElement.textContent = item.name;
+        const nameElement = document.createElement('span');
+        //nameElement.textContent = item.name; // -> title
+        // star is ⭐, thanks Gemini
+        nameElement.textContent = item.title + " \u2B50 "+item.rating+""; // -> title
 
         const tooltip = document.createElement('div');
         tooltip.classList.add('tooltip');

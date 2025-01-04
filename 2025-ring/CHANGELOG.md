@@ -1,3 +1,13 @@
+## v0.4.2 2025-01-04
+
+* added star rating, and filtered upon it.
+
+## v0.4.1 2025-01-04
+
+* added MIN quality emnv but not attached to behaviour yet..
+* just printing it in index.
+
+
 ## v.0.4.0 2024-12-26
 
 God I miss cursor.sh who would write this for me...
