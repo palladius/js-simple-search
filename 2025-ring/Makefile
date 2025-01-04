@@ -1,6 +1,6 @@
 
 run-dev:
-	node server.js
+	MIN_RATING=3.5 node server.js
 
 docker-build:
 #docker build -t 2025-ring .

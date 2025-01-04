@@ -1,3 +1,6 @@
+// get rating from ENV
+//const envMinRating2 = parseFloat(process.env.MIN_RATING);
+
 async function createURLRing(url) {
     try {
       const response = await fetch(url);
@@ -52,7 +55,7 @@ nameElement.textContent = item.name;
 
       // Create the footer element
       const footer = document.createElement('footer');
-      footer.innerHTML = `<hr><div class="footer"> Ring App version v${version}</div>`;
+      footer.innerHTML = `<hr><div class="footer">[footer] Ring App version v${version}</div>`;
 
       // Append the footer to the page
       document.body.appendChild(footer);

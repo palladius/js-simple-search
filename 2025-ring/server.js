@@ -3,9 +3,13 @@ const fs = require('fs');
 const path = require('path'); // Import the path module
 
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = 3001;
+
+// min rating
+const envMinRating = parseFloat(process.env.MIN_RATING);
 
 const server = http.createServer((req, res) => {
+
   if (req.url === '/iframe') {
     // Read the contents of the iframe HTML file
     fs.readFile('iframe.html', (err, data) => {
@@ -17,6 +21,7 @@ const server = http.createServer((req, res) => {
         res.end(data);
       }
     });
+
   }  else if (req.url === '/VERSION') {
     // Serve the VERSION file
     fs.readFile('VERSION', (err, data) => {
@@ -28,17 +33,25 @@ const server = http.createServer((req, res) => {
         res.end(data);
       }
     });
+
+        // 3. / (index)
   } else if (req.url === '/') {  // Handle requests for the root URL
     // Serve the main index.html for other requests
-    fs.readFile('index.html', (err, data) => {
+    fs.readFile('index.html', 'utf-8',  (err, data) => {
       if (err) {
         res.writeHead(500);
         res.end('Error loading index.html');
       } else {
+        const updatedHtml = data.replace(/{{envMinRating}}/g, envMinRating);
+
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.end(data);
+        // Server side se vuoi: res.end(data + ` envMinRating - ${envMinRating}` );
+        res.end(updatedHtml);
+
       }
     });
+
+    // 4. GENERIC
   } else {
     // Construct the file path
     const filePath = path.join(__dirname, req.url);
