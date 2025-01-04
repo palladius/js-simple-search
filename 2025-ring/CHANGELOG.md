@@ -18,6 +18,7 @@ God I miss cursor.sh who would write this for me...
 
 - Added link to prod app
 - Added footer with version
+
 ## v0.3.4 2024-12-25
 
 - Added cloudbuild.yaml

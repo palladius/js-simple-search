@@ -69,7 +69,7 @@ async function createURLRing(url) {
 
       // Create the footer element
       const footer = document.createElement('footer');
-      footer.innerHTML = `<hr><div class="footer">[footer] Ring App version v${version}</div>`;
+      footer.innerHTML = `<hr><div class="footer">[script.js Auto footer] Ring App version v${version}</div>`;
 
       // Append the footer to the page
       document.body.appendChild(footer);
