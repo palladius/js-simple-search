@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta>
+
+
+    </head>
+    <body style="height: 100%; width: 99%">
+        <h1>Example of embedding of Carlessian ring</h1>
+        Qui ci metto ...
+
+
+        <h2>Bibliography</h2>
+
+        * https://stackoverflow.com/questions/33023120/making-iframe-and-footer-play-nice <br/>
+
+        <div style="width: 100%; height: calc(100% - 7em);" class="frame">
+            <!--
+            <iframe id="typeform-full" src="https://showroom.typeform.com/to/WJ565l" frameborder="0"></iframe>
+            <iframe id="riccardo-localhost" src="http://localhost:3000/iframe" frameborder="0"></iframe>
+            -->
+            <iframe id="riccardo-cloudrun" src="https://url-ring-907790253572.europe-west1.run.app/iframe" frameborder="0"></iframe>
+
+        </div>
+        <footer style="height: 7em">
+                Footer - credo venga sovrascritto..
+        </footer>
+    </body>
+</html>
+
+<style type="text/css">
+    html{
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    iframe{
+        position: relative;
+        left:0;
+        right:0;
+        bottom:0;
+        top:0;
+        border:0;
+        width: 100%;
+        height: 100%;
+    }
+    .footer{
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: auto;
+        background: white;
+        font-family: "Source Sans Pro",sans-serif;
+        text-align: center;
+        font-size: 80%;
+    }
+ </style>
