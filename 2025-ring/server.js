@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path'); // Import the path module
 
 const hostname = '127.0.0.1';
-const port = 3001;
+const port = 3000;
 
 // min rating
 const envMinRating = parseFloat(process.env.MIN_RATING);
